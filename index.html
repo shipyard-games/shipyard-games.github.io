@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"/>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <style>
+      html,body
+      {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        overflow-y: scroll; /* has to be scroll, not auto */
+        -webkit-overflow-scrolling: touch;
+      }
      body { margin:0; padding:0; }
       .flex-container {
         display: -webkit-flex;
@@ -30,8 +40,7 @@
          align-items:         center;
          -webkit-justify-content: space-between;
          justify-content:         space-between;
-         height: 800px;
-      }
+         min-height: 800px; }
       .text-section-content {
         display: -webkit-flex;
         display: flex;
@@ -41,6 +50,18 @@
         align-items:         center;
         -webkit-justify-content: space-between;
         justify-content:         space-between;
+      }
+      .text-section-content p {
+        color: #e8e8e8;
+        width: 33%;
+        object-fit: contain;
+        font-family: 'Lato', sans-serif;
+        font-size: 1em;
+        font-weight: 100;
+        font-style: normal;
+        line-height: 1.53;
+        letter-spacing: normal;
+        text-align: center;
       }
       h1 {
         object-fit: contain;
@@ -68,8 +89,8 @@
         -webkit-align-items: center;
         align-items:         center;
       }
-      .text-section-content h3 {
-        width: 60%;
+      h3 {
+        width: 50%;
         font-family: Lato;
         font-size: 4em;
         font-weight: 900;
@@ -79,6 +100,7 @@
         letter-spacing: -1px;
         color: #a0ea9d;
         text-align: center;
+        margin: 20px;
       }
       h4 {
         object-fit: contain;
@@ -106,6 +128,16 @@
         text-align: center;
         color: #182224;
       }
+      @media only screen and (max-width : 500px) {
+        h1 {font-size: 1em; }
+        h2 {font-size: 2em;}
+        h3 {font-size: 2em;}
+        h4 {font-size: 0.8em;}
+        h5 {font-size: 1.6em;}
+        .text-section-content p {
+          width: 66%;
+        }
+      }
       .picture-content {
         height: 868px;
         display: -webkit-flex;
@@ -130,6 +162,19 @@
         -webkit-align-items: center;
         align-items:         center;
         margin-top: 23px;
+      }
+      .navbar-item {
+        margin-left: 58px;
+        margin-right: 58px;
+      }
+      @media only screen and (max-width : 500px) {
+        .navbar {
+          -webkit-flex-direction: column;
+          flex-direction:         column;
+        }
+        .navbar-item {
+          margin: 20px;
+        }
       }
       .navbar-item {
         margin-left: 58px;
@@ -163,6 +208,9 @@
       .navbar-links .navbar-link a {
         text-decoration: none !important;
       }
+      @media only screen and (max-width : 500px) {
+        .navbar-links { display: none; }
+      }
       .loc {
         object-fit: contain;
         font-family: Helvetica;
@@ -184,10 +232,10 @@
         line-height: 1.53;
         letter-spacing: normal;
         text-align: center;
-        margin-top: 39px;
+        margin: 39px;
         color: #182224;
         min-height: 32px;
-        border-radius: 10px;
+        border-radius: 8px;
         border-width: 1px;
         border-color: #000000;
         padding-left: 15px;
@@ -211,9 +259,8 @@
         min-height: 720px;
         align-items: stretch;
       }
-      @media all and (max-width: 500px) {
+      @media only screen and (max-width : 500px) {
         .photos {
-          /* On small screens, we are no longer using row direction but column */
           flex-direction: column;
           flex: 1;
         }
@@ -260,6 +307,13 @@
         -webkit-flex-direction: row;
         flex-direction:         row;
       }
+      @media only screen and (max-width : 600px) {
+        .positions {
+          /* On small screens, we are no longer using row direction but column */
+          flex-direction: column;
+          flex: 1;
+        }
+      }
       .position {
         display: -webkit-flex;
         display: flex;
@@ -272,18 +326,7 @@
         flex: 1;
         height: 720px;
       }
-      .text-section-content p {
-        color: #e8e8e8;
-        width: 589px;
-        object-fit: contain;
-        font-family: 'Lato', sans-serif;
-        font-size: 1em;
-        font-weight: 100;
-        font-style: normal;
-        line-height: 1.53;
-        letter-spacing: normal;
-        text-align: center;
-      }
+
       .position p {
         color: #000000;
         object-fit: contain;
@@ -320,6 +363,15 @@
         z-index: -1;
         margin: 0;
       }
+      #location {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction:         row;
+      }
+      #location-pin {
+        margin-right: 10px;
+      }
       .stretch {
         width:100%;
         height:100%;
@@ -329,11 +381,6 @@
       a:hover {color:#ff7400;}  /* mouse over link */
       a:active {color:#FFFFFF;}
   </style>
-  <script>
-    document.addEventListener('gesturestart', function (e) {
-        e.preventDefault();
-    });
-</script>
 </head>
 <body>
   <div class="flex-container">
@@ -353,8 +400,8 @@
           <div class="navbar-link"><a href="#section-careers">Careers</a></div>
           <div class="navbar-link"><a href="#section-contact">Contact</a></div>
         </div>
-        <div class="navbar-item">
-          <img src="img/fill-1.svg" class="Fill-1">
+        <div class="navbar-item" id="location">
+          <img src="img/fill-1.svg" class="Fill-1" id="location-pin">
           <span class="loc">Helsinki, Finland</span>
         </div>
       </div>
