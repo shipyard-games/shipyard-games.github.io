@@ -1,9 +1,371 @@
-<html>
-  <head>
-    <meta name="google-site-verification" content="_UpJvwUhFV42FiSvsz3uH743VBsrI_jGPKSwsdnwz6g" />
-    <title>Shipyard Games</title>
-  </head>
-  <body>
-Hello World
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Shipyard Games" />
+  <meta name="viewport" content="width=device-width">
+  <title>Shipyard Games</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1'/>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <style>
+     body { margin:0; padding:0 }
+      .flex-container {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction:         column;
+        -webkit-align-items: center;
+        align-items:         center;
+        overflow-x: hidden;
+      }
+      .flex-item {
+        width: 100%
+      }
+      .text-section {
+         background-color: #14191B;
+         display: -webkit-flex;
+         display: flex;
+         -webkit-flex-direction: column;
+         flex-direction:         column;
+         -webkit-align-items: center;
+         align-items:         center;
+         -webkit-justify-content: space-between;
+         justify-content:         space-between;
+         height: 800px;
+      }
+      .text-section-content {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction:         column;
+        -webkit-align-items: center;
+        align-items:         center;
+        -webkit-justify-content: center;
+        justify-content:         center;
+      }
+      h1 {
+        object-fit: contain;
+        font-family: Lato;
+        font-size: 15px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 4.93;
+        letter-spacing: normal;
+        color: #ff7400;
+        text-align: center;
+      }
+      h2 {
+        width: 736px;
+        height: 148px;
+        object-fit: contain;
+        font-family: Lato;
+        font-size: 60px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.23;
+        letter-spacing: -1px;
+        text-align: center;
+        color: #ffffff;
+        -webkit-align-items: center;
+        align-items:         center;
+      }
+      h3 {
+        width: 585px;
+        font-family: Lato;
+        font-size: 60px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.17;
+        letter-spacing: -1px;
+        color: #a0ea9d;
+        text-align: center;
+      }
+      h4 {
+        object-fit: contain;
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      h5 {
+        object-fit: contain;
+        font-family: Lato;
+        font-size: 48px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.54;
+        letter-spacing: -1px;
+        text-align: center;
+        color: #182224;
+      }
+      p {
+        width: 589px;
+        object-fit: contain;
+        font-family: Lato;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.53;
+        letter-spacing: normal;
+        text-align: center;
+      }
+      #background-img {
+        background-image: url('img/bitmap-copy-2.png');
+        height: 868px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction:         column;
+        -webkit-justify-content: space-between;
+        justify-content:         space-between;
+        -webkit-align-items: center;
+        align-items:         center;
+      }
+      .navbar {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction:         row;
+        -webkit-justify-content: space-between;
+        justify-content:         space-between;
+        -webkit-align-items: center;
+        align-items:         center;
+        margin-top: 23px;
+      }
+      .navbar-item {
+        margin-left: 58px;
+        margin-right: 58px;
+      }
+      .Group-Copy-2 {
+        width: 122px;
+        height: 45px;
+      }
+      .navbar-links {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction:         row;
+        -webkit-justify-content: space-between;
+        justify-content:         space-between;
+      }
+      .navbar-links .navbar-link {
+          object-fit: contain;
+          font-family: Helvetica;
+          font-size: 15px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.13;
+          letter-spacing: 0.3px;
+          text-align: center;
+          color: #ffffff;
+          margin-left: 30px;
+      }
+      .navbar-links .navbar-link a {
+        text-decoration: none !important;
+      }
+      .loc {
+        object-fit: contain;
+        font-family: Helvetica;
+        font-size: 15px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.13;
+        letter-spacing: 0.2px;
+        text-align: left;
+        color: #ffffff;
+      }
+      .btn {
+        font-family: Lato;
+        font-size: 15px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.53;
+        letter-spacing: normal;
+        text-align: center;
+        margin-top: 39px;
+        color: #182224;
+        border-radius: 10px;
+        border-width: 1px;
+        border-color: #000000;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: rgba(0, 0, 0, 0);
+      }
+      .btn-fill {
+        background-color: #a0ea9d;
+        border-color: #a0ea9d;
+      }
+      .photos {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction:         row;
+        -webkit-align-items: center;
+        align-items:         center;
+        flex 1;
+      }
+      .photo {
+        background-color: #14191B;
+        height: 720px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction:         column;
+        -webkit-align-items: center;
+        align-items:         center;
+        flex: auto;
+        -webkit-justify-content: flex-end;
+        justify-content:         flex-end;
+        flex: 1;
+      }
+      .positions {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction:         row;
+      }
+      .position {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction:         column;
+        -webkit-align-items: center;
+        align-items:         center;
+        -webkit-justify-content: space-between;
+        justify-content:         space-between;
+        flex: 1;
+        height: 720px;
+      }
+      .text-section-content p {
+        color: #e8e8e8;
+      }
+      .position p {
+        color: #000000;
+      }
+      .position-content {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction:         column;
+        -webkit-align-items: center;
+        align-items:         center;
+        margin-bottom: 64px;
+      }
+      .title-container {
+        margin-bottom: 64px;
+      }
+      a {color:#FFFFFF;}      /* unvisited link */
+      a:visited {color:#EEEEEE;}  /* visited link */
+      a:hover {color:#CCCCCC;}  /* mouse over link */
+      a:active {color:#FFFFFF;}
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item" id="background-img">
+      <div class="navbar flex-item">
+        <div class="navbar-item">
+          <img src="img/group-copy-2.svg"
+            class="Group-Copy-2">
+        </div>
+        <div class="navbar-links navbar-item">
+          <div class="navbar-link"><a href="#section-vision">Vision</a></div>
+          <div class="navbar-link"><a href="#section-vision">Blog</a></div>
+          <div class="navbar-link"><a href="#section-team">Team</a></div>
+          <div class="navbar-link"><a href="#section-careers">Careers</a></div>
+          <div class="navbar-link"><a href="#section-contact">Contact</a></div>
+        </div>
+        <div class="navbar-item">
+          <img src="img/fill-1.svg" class="Fill-1">
+          <span class="loc">Helsinki, Finland</span>
+        </div>
+      </div>
+      <div>
+        <h2>We’re building the future of location based gaming.</h2>
+      </div>
+      <div></div>
+    </div>
+    <div class="flex-item text-section" id="section-vision">
+      <h1>VISION</h1>
+      <div class="text-section-content">
+        <h3>We believe location is the next big thing</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius facilisis dolor, sed blandit ipsum pharetra aliquam. Suspendisse bibendum lacus gravida neque suscipit ornare. Sed sed mauris sed nulla aliquet gravida nec nec arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius facilisis dolor, sed blandit ipsum pharetra aliquam. Suspendisse bibendum lacus gravida neque suscipit ornare. Sed sed mauris sed nulla aliquet gravida nec nec arcu.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius facilisis dolor, sed blandit ipsum pharetra aliquam. Suspendisse bibendum lacus gravida neque suscipit ornare. Sed sed mauris sed nulla aliquet gravida nec nec arcu.</p>
+        <button class="btn btn-fill">Download press release</button>
+      </div>
+    <div></div>
+    </div>
+    <div class="flex-item" id="section-team">
+      <div class="photos">
+        <div class="photo" style="background-image: url('img/portrait_anttu.png');">
+          <div class="title-container">
+            <h4>Andreas Wedenberg</h4>
+            <h4>CEO</h4>
+          </div>
+        </div>
+        <div class="photo" style="background-image: url('img/portrait_emma.png');">
+          <div class="title-container">
+            <h4>Emma Huovinen</h4>
+            <h4>COO</h4>
+          </div>
+        </div>
+        <div class="photo" style="background-image: url('img/portrait_teemu.png');">
+          <div class="title-container">
+            <h4>Teemu Tuulari</h4>
+            <h4>Co-founder</h4>
+          </div>
+        </div>
+        <div class="photo" style="background-image: url('img/portrait_teukka.png');">
+          <div class="title-container">
+            <h4>Teemu Harju</h4>
+            <h4>CTO</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-item" id="section-careers">
+      <div class="positions">
+        <div class="position" style="background-color:#ffffff;">
+          <h1>OPEN POSITION</h1>
+          <div class="position-content">
+            <h5>Game artist</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius facilisis dolor, sed blandit ipsum pharetra aliquam. Suspendisse bibendum lacus gravida neque suscipit ornare. Sed sed mauris sed nulla aliquet gravida nec nec arcu.</p>
+            <button class="btn">Read more</button>
+          </div>
+        <div></div>
+        </div>
+        <div class="position" style="background-color:#a0ea9d;">
+          <h1>OPEN POSITION</h1>
+          <div class="position-content">
+            <h5>Unity developer</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius facilisis dolor, sed blandit ipsum pharetra aliquam. Suspendisse bibendum lacus gravida neque suscipit ornare. Sed sed mauris sed nulla aliquet gravida nec nec arcu.</p>
+            <button class="btn">Read more</button>
+          </div>
+        <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-item text-section" id="section-contact">
+      <h1>CONTACT US</h1>
+      <div class="text-section-content">
+        <h3>Shipyard Games</h3>
+        <p>Kaapelitehdas xxx</p>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</body>
 </html>
