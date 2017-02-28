@@ -203,13 +203,13 @@
         display: flex;
         -webkit-flex-direction: row;
         flex-direction:         row;
-        -webkit-align-items: center;
-        align-items:         center;
+        -webkit-align-items: stretch;
+        align-items:         stretch;
         -webkit-justify-content: space-between;
         justify-content:         space-between;
         flex 1;
         min-height: 720px;
-        height: auto
+        align-items: stretch;
       }
       @media all and (max-width: 500px) {
         .photos {
@@ -228,27 +228,31 @@
         -webkit-justify-content: flex-end;
         justify-content:         flex-end;
         flex: 1;
-        min-height: 720px;
+        height: 720px;
       }
       #anttu {
         background: url('img/portrait_anttu.png');
         background-repeat: no-repeat;
         background-color: #14191B;
+        background-size: cover;
       }
       #emma {
         background: url('img/portrait_anttu.png');
         background-repeat: no-repeat;
         background-color: #14191B;
+        background-size: cover;
       }
       #teemu {
         background: url('img/portrait_anttu.png');
         background-repeat: no-repeat;
         background-color: #14191B;
+        background-size: cover;
       }
       #teukka {
         background: url('img/portrait_anttu.png');
         background-repeat: no-repeat;
         background-color: #14191B;
+        background-size: cover;
       }
       .positions {
         display: -webkit-flex;
