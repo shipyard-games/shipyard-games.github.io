@@ -3,10 +3,10 @@
   <meta name="author" content="Shipyard Games" />
   <meta name="viewport" content="width=device-width">
   <title>Shipyard Games</title>
-  <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1'/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"/>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <style>
-     body { margin:0; padding:0 }
+     body { margin:0; padding:0; }
       .flex-container {
         display: -webkit-flex;
         display: flex;
@@ -15,6 +15,7 @@
         -webkit-align-items: center;
         align-items:         center;
         overflow-x: hidden;
+        font-size: 15px;
       }
       .flex-item {
         width: 100%
@@ -38,13 +39,13 @@
         flex-direction:         column;
         -webkit-align-items: center;
         align-items:         center;
-        -webkit-justify-content: center;
-        justify-content:         center;
+        -webkit-justify-content: space-between;
+        justify-content:         space-between;
       }
       h1 {
         object-fit: contain;
         font-family: Lato;
-        font-size: 15px;
+        font-size: 1em;
         font-weight: 900;
         font-style: normal;
         font-stretch: normal;
@@ -54,11 +55,9 @@
         text-align: center;
       }
       h2 {
-        width: 736px;
-        height: 148px;
         object-fit: contain;
         font-family: Lato;
-        font-size: 60px;
+        font-size: 4em;
         font-weight: 900;
         font-style: normal;
         font-stretch: normal;
@@ -69,10 +68,10 @@
         -webkit-align-items: center;
         align-items:         center;
       }
-      h3 {
-        width: 585px;
+      .text-section-content h3 {
+        width: 60%;
         font-family: Lato;
-        font-size: 60px;
+        font-size: 4em;
         font-weight: 900;
         font-style: normal;
         font-stretch: normal;
@@ -84,7 +83,7 @@
       h4 {
         object-fit: contain;
         font-family: Lato;
-        font-size: 24px;
+        font-size: 1.6em;
         font-weight: 900;
         font-style: normal;
         font-stretch: normal;
@@ -98,7 +97,7 @@
       h5 {
         object-fit: contain;
         font-family: Lato;
-        font-size: 48px;
+        font-size: 3.2em;
         font-weight: 900;
         font-style: normal;
         font-stretch: normal;
@@ -107,20 +106,7 @@
         text-align: center;
         color: #182224;
       }
-      p {
-        width: 589px;
-        object-fit: contain;
-        font-family: Lato;
-        font-size: 15px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.53;
-        letter-spacing: normal;
-        text-align: center;
-      }
-      #background-img {
-        background-image: url('img/bitmap-copy-2.png');
+      .picture-content {
         height: 868px;
         display: -webkit-flex;
         display: flex;
@@ -130,6 +116,9 @@
         justify-content:         space-between;
         -webkit-align-items: center;
         align-items:         center;
+      }
+      .picture-content h2 {
+        width: 50%;
       }
       .navbar {
         display: -webkit-flex;
@@ -161,7 +150,7 @@
       .navbar-links .navbar-link {
           object-fit: contain;
           font-family: Helvetica;
-          font-size: 15px;
+          font-size: 1em;
           font-weight: bold;
           font-style: normal;
           font-stretch: normal;
@@ -177,7 +166,7 @@
       .loc {
         object-fit: contain;
         font-family: Helvetica;
-        font-size: 15px;
+        font-size: 1em;
         font-weight: bold;
         font-style: normal;
         font-stretch: normal;
@@ -188,7 +177,7 @@
       }
       .btn {
         font-family: Lato;
-        font-size: 15px;
+        font-size: 1em;
         font-weight: bold;
         font-style: normal;
         font-stretch: normal;
@@ -197,6 +186,7 @@
         text-align: center;
         margin-top: 39px;
         color: #182224;
+        min-height: 32px;
         border-radius: 10px;
         border-width: 1px;
         border-color: #000000;
@@ -215,21 +205,50 @@
         flex-direction:         row;
         -webkit-align-items: center;
         align-items:         center;
+        -webkit-justify-content: space-between;
+        justify-content:         space-between;
         flex 1;
+        min-height: 720px;
+        height: auto
+      }
+      @media all and (max-width: 500px) {
+        .photos {
+          /* On small screens, we are no longer using row direction but column */
+          flex-direction: column;
+          flex: 1;
+        }
       }
       .photo {
-        background-color: #14191B;
-        height: 720px;
         display: -webkit-flex;
         display: flex;
         -webkit-flex-direction: column;
         flex-direction:         column;
         -webkit-align-items: center;
         align-items:         center;
-        flex: auto;
         -webkit-justify-content: flex-end;
         justify-content:         flex-end;
         flex: 1;
+        min-height: 720px;
+      }
+      #anttu {
+        background: url('img/portrait_anttu.png');
+        background-repeat: no-repeat;
+        background-color: #14191B;
+      }
+      #emma {
+        background: url('img/portrait_anttu.png');
+        background-repeat: no-repeat;
+        background-color: #14191B;
+      }
+      #teemu {
+        background: url('img/portrait_anttu.png');
+        background-repeat: no-repeat;
+        background-color: #14191B;
+      }
+      #teukka {
+        background: url('img/portrait_anttu.png');
+        background-repeat: no-repeat;
+        background-color: #14191B;
       }
       .positions {
         display: -webkit-flex;
@@ -251,9 +270,26 @@
       }
       .text-section-content p {
         color: #e8e8e8;
+        width: 589px;
+        object-fit: contain;
+        font-family: 'Lato', sans-serif;
+        font-size: 1em;
+        font-weight: 100;
+        font-style: normal;
+        line-height: 1.53;
+        letter-spacing: normal;
+        text-align: center;
       }
       .position p {
         color: #000000;
+        object-fit: contain;
+        font-family: 'Lato', sans-serif;
+        font-size: 1em;
+        font-weight: 100;
+        font-style: normal;
+        line-height: 1.53;
+        letter-spacing: normal;
+        text-align: center;
       }
       .position-content {
         display: -webkit-flex;
@@ -262,20 +298,45 @@
         flex-direction:         column;
         -webkit-align-items: center;
         align-items:         center;
+        -webkit-justify-content: center;
+        justify-content:         center;
         margin-bottom: 64px;
+        width: 52%;
+        height: 30%;
       }
       .title-container {
-        margin-bottom: 64px;
+        margin-bottom: 34px;
+      }
+      #background {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+        margin: 0;
+      }
+      .stretch {
+        width:100%;
+        height:100%;
       }
       a {color:#FFFFFF;}      /* unvisited link */
       a:visited {color:#EEEEEE;}  /* visited link */
       a:hover {color:#ff7400;}  /* mouse over link */
       a:active {color:#FFFFFF;}
   </style>
+  <script>
+    document.addEventListener('gesturestart', function (e) {
+        e.preventDefault();
+    });
+</script>
 </head>
 <body>
   <div class="flex-container">
-    <div class="flex-item" id="background-img">
+    <div class="flex-item picture-content">
+      <div id="background">
+        <img src="img/bitmap-copy-2.png" class="stretch"/>
+      </div>
       <div class="navbar flex-item">
         <div class="navbar-item">
           <img src="img/group-copy-2.svg"
@@ -293,9 +354,7 @@
           <span class="loc">Helsinki, Finland</span>
         </div>
       </div>
-      <div>
-        <h2>We’re building the future of location based gaming.</h2>
-      </div>
+      <h2>We’re building the future of location based gaming.</h2>
       <div></div>
     </div>
     <div class="flex-item text-section" id="section-vision">
@@ -310,25 +369,25 @@
     </div>
     <div class="flex-item" id="section-team">
       <div class="photos">
-        <div class="photo" style="background-image: url('img/portrait_anttu.png');">
+        <div class="photo" id="anttu">
           <div class="title-container">
             <h4>Andreas Wedenberg</h4>
             <h4>CEO</h4>
           </div>
         </div>
-        <div class="photo" style="background-image: url('img/portrait_anttu.png');">
+        <div class="photo" id="emma">
           <div class="title-container">
             <h4>Emma Huovinen</h4>
             <h4>COO</h4>
           </div>
         </div>
-        <div class="photo" style="background-image: url('img/portrait_anttu.png');">
+        <div class="photo" id="teemu">
           <div class="title-container">
             <h4>Teemu Tuulari</h4>
             <h4>Co-founder</h4>
           </div>
         </div>
-        <div class="photo" style="background-image: url('img/portrait_anttu.png');">
+        <div class="photo" id="teukka">
           <div class="title-container">
             <h4>Teemu Harju</h4>
             <h4>CTO</h4>
@@ -368,4 +427,5 @@
     </div>
   </div>
 </body>
+
 </html>
