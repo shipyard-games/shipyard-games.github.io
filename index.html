@@ -27,11 +27,16 @@
         overflow-x: hidden;
         font-size: 15px;
       }
+      @media only screen and (max-width : 500px) {
+        .flex-container {
+          font-size: 8px;
+        }
+      }
       .flex-item {
         width: 100%
       }
       .text-section {
-         background-color: #14191B;
+         background-color: rgb(36,34,39);
          display: -webkit-flex;
          display: flex;
          -webkit-flex-direction: column;
@@ -72,7 +77,7 @@
         font-stretch: normal;
         line-height: 4.93;
         letter-spacing: normal;
-        color: #ff7400;
+        color: rgb(255,70,61);
         text-align: center;
       }
       h2 {
@@ -98,7 +103,7 @@
         font-stretch: normal;
         line-height: 1.17;
         letter-spacing: -1px;
-        color: #a0ea9d;
+        color: rgb(255,70,61);
         text-align: center;
         margin: 20px;
       }
@@ -127,16 +132,7 @@
         letter-spacing: -1px;
         text-align: center;
         color: #182224;
-      }
-      @media only screen and (max-width : 500px) {
-        h1 {font-size: 1em; }
-        h2 {font-size: 2em;}
-        h3 {font-size: 2em;}
-        h4 {font-size: 0.8em;}
-        h5 {font-size: 1.6em;}
-        .text-section-content p {
-          width: 66%;
-        }
+        margin: 5px
       }
       .picture-content {
         height: 868px;
@@ -180,7 +176,7 @@
         margin-left: 58px;
         margin-right: 58px;
       }
-      .Group-Copy-2 {
+      .logo {
         width: 122px;
         height: 45px;
       }
@@ -243,8 +239,8 @@
         background-color: rgba(0, 0, 0, 0);
       }
       .btn-fill {
-        background-color: #a0ea9d;
-        border-color: #a0ea9d;
+        background-color: rgb(255,70,61);
+        border-color: rgb(255,70,61);
       }
       .photos {
         display: -webkit-flex;
@@ -339,9 +335,33 @@
         align-items:         center;
         -webkit-justify-content: center;
         justify-content:         center;
-        margin-bottom: 64px;
+        margin-bottom: 10%;
         width: 52%;
         height: 30%;
+      }
+      #game-artist {
+        background-height: 100%;
+        background-image:  radial-gradient(circle, rgb(255,255,230) 50%, transparent 50%);
+        background-repeat: no-repeat;
+        background-color: rgb(255,70,61);
+      }
+      #game-artist h1 {
+        color: rgb(255,255,230);
+      }
+      #unity-developer  {
+        background-height: 100%;
+        background: rgb(255,255,230);
+      }
+      #unity-developer h1 {
+        color: rgb(36,34,39);
+      }
+      #unity-developer .position-content {
+        height: 70%;
+        width: 70%;
+        box-shadow: 20px 20px 0 0 rgb(255,70,61) inset, -20px -20px 0 0 rgb(255,70,61) inset;
+      }
+      #unity-developer .position-content p {
+        width: 52%;
       }
       .title-container {
         margin-bottom: 34px;
@@ -370,7 +390,7 @@
       }
       a {color:#FFFFFF;}      /* unvisited link */
       a:visited {color:#EEEEEE;}  /* visited link */
-      a:hover {color:#ff7400;}  /* mouse over link */
+      a:hover {color: rgb(255,70,61);}  /* mouse over link */
       a:active {color:#FFFFFF;}
   </style>
 </head>
@@ -383,7 +403,7 @@
       <div class="navbar flex-item">
         <div class="navbar-item">
           <img src="img/group-copy-2.svg"
-            class="Group-Copy-2">
+            class="logo">
         </div>
         <div class="navbar-links navbar-item">
           <div class="navbar-link"><a href="#section-vision">Vision</a></div>
@@ -440,7 +460,7 @@
     </div>
     <div class="flex-item" id="section-careers">
       <div class="positions">
-        <div class="position" style="background-color:#ffffff;">
+        <div class="position" id="game-artist">
           <h1>OPEN POSITION</h1>
           <div class="position-content">
             <h5>Game artist</h5>
@@ -449,7 +469,7 @@
           </div>
         <div></div>
         </div>
-        <div class="position" style="background-color:#a0ea9d;">
+        <div class="position" id="unity-developer">
           <h1>OPEN POSITION</h1>
           <div class="position-content">
             <h5>Unity developer</h5>
