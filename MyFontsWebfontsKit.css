@@ -1,0 +1,44 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3368311, 2017-04-03T10:23:44-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: BigNoodleTitling-Oblique by Sentinel Type
+ * URL: http://www.myfonts.com/fonts/sentinel/big-noodle-titling/oblique/
+ * Copyright: Copyright (c) James Arboghast/Sentinel Type, 2003. All rights reserved. Published 2008 by S E N T I N E L  T Y P E. This font is authorized for use by Sentinel Type licensees only &amp; may not be copied or distributed. Read enclosed text file for details
+ * Licensed pageviews: 200,000
+ * 
+ * Webfont: BigNoodleTitling by Sentinel Type
+ * URL: http://www.myfonts.com/fonts/sentinel/big-noodle-titling/regular/
+ * Copyright: Copyright (c) James Arboghast/Sentinel Type, 2003. All rights reserved. Published 2008 by S E N T I N E L  T Y P E. This font is authorized for use by Sentinel Type licensees only &amp; may not be copied or distributed. Read enclosed text file for details
+ * Licensed pageviews: 200,000
+ * 
+ * Webfont: BigNoodleBlockTitling-Oblique by Sentinel Type
+ * URL: http://www.myfonts.com/fonts/sentinel/big-noodle-titling/block-oblique/
+ * Copyright: Copyright (c) James Arboghast/Sentinel Type, 2003. All rights reserved. This font is free and distributable. You may: a) use it free of charge for any personal or commercial purpose, b) email it to anybody, upload it to archive sites &amp; bulletin boards
+ * Licensed pageviews: 100,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3368311
+ * 
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/336577");
+
+  
+@font-face {font-family: 'BigNoodleTitling-Oblique';src: url('webfonts/336577_0_0.eot');src: url('webfonts/336577_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/336577_0_0.woff2') format('woff2'),url('webfonts/336577_0_0.woff') format('woff'),url('webfonts/336577_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'BigNoodleTitling';src: url('webfonts/336577_1_0.eot');src: url('webfonts/336577_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/336577_1_0.woff2') format('woff2'),url('webfonts/336577_1_0.woff') format('woff'),url('webfonts/336577_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'BigNoodleBlockTitling-Oblique';src: url('webfonts/336577_2_0.eot');src: url('webfonts/336577_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/336577_2_0.woff2') format('woff2'),url('webfonts/336577_2_0.woff') format('woff'),url('webfonts/336577_2_0.ttf') format('truetype');}
+ 
