@@ -36,7 +36,7 @@
         width: 100%
       }
       .text-section {
-         background-color: rgb(36,34,39);
+         background-color: #FFF8E1;
          display: -webkit-flex;
          display: flex;
          -webkit-flex-direction: column;
@@ -45,7 +45,32 @@
          align-items:         center;
          -webkit-justify-content: space-between;
          justify-content:         space-between;
-         min-height: 800px; }
+       }
+      .text-section .center-top {
+        flex-direction:         row;
+        align-items:         center;
+      }
+      .text-section .center-top .sc-tag {
+        color: #fafafa;
+        background-color: #ff4541;
+        font-family: 'Lato', sans-serif;
+        font-size: 1em;
+        font-weight: 100;
+        font-style: normal;
+        line-height: 1.53;
+        letter-spacing: normal;
+        display: flex;
+        flex-direction:         row;
+        -webkit-align-items: center;
+        align-items:         center;
+      }
+      #sc-tag {
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction:         column;
+        -webkit-justify-content: space-between;
+        justify-content:         space-between;
+      }
       .text-section-content {
         display: -webkit-flex;
         display: flex;
@@ -56,8 +81,12 @@
         -webkit-justify-content: space-between;
         justify-content:         space-between;
       }
+      #section-contact {
+        background: url("img/team-outdoors.png") no-repeat;
+        height: 100%;
+      }
       .text-section-content p {
-        color: #e8e8e8;
+        color: #ff4541;
         width: 33%;
         object-fit: contain;
         font-family: 'Lato', sans-serif;
@@ -229,66 +258,78 @@
         letter-spacing: normal;
         text-align: center;
         margin: 39px;
-        color: #182224;
+        color: #ffffff;
         min-height: 32px;
         border-radius: 8px;
-        border-width: 1px;
+        border-width: 0px;
         border-color: #000000;
         padding-left: 15px;
         padding-right: 15px;
-        background-color: rgba(0, 0, 0, 0);
+        background-color: #ff4541;
       }
       .btn-fill {
         background-color: rgb(255,70,61);
-        border-color: rgb(255,70,61);
       }
-      .photos {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: row;
-        flex-direction:         row;
-        -webkit-align-items: stretch;
-        align-items:         stretch;
-        -webkit-justify-content: space-between;
-        justify-content:         space-between;
-        flex 1;
-        min-height: 720px;
-        align-items: stretch;
-      }
-      @media only screen and (max-width : 500px) {
-        .photos {
-          flex-direction: column;
-          flex: 1;
-        }
-      }
-      .photo {
+      #section-team {
         display: -webkit-flex;
         display: flex;
         -webkit-flex-direction: column;
         flex-direction:         column;
         -webkit-align-items: center;
         align-items:         center;
-        -webkit-justify-content: flex-end;
-        justify-content:         flex-end;
-        flex: 1;
-        height: 720px;
+        -webkit-justify-content: space-between;
+        justify-content:         space-between;
+        background-image: url("img/team.png");
+        height: 100%;
+        width: 100%;
       }
-      #anttu {
-        background: linear-gradient(0deg, rgba(34, 34, 51, 0.3), rgba(34, 34, 51, 0.3)), url('img/portrait_anttu.png') repeat;
-        background-size: cover;
+      #section-team h3 {
+        width: 50%;
+        font-family: Lato;
+        font-size: 4em;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.17;
+        letter-spacing: -1px;
+        color: #fff9e7;
+        text-align: center;
+        margin: 20px;
       }
-      #emma {
-        background: linear-gradient(0deg, rgba(34, 34, 51, 0.3), rgba(34, 34, 51, 0.3)), url('img/portrait_anttu.png') repeat;
-        background-size: cover;
+      .roster {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction:         row;
+        -webkit-justify-content: space-between;
+        justify-content:         space-between;
       }
-      #teemu {
-        background: linear-gradient(0deg, rgba(34, 34, 51, 0.3), rgba(34, 34, 51, 0.3)), url('img/portrait_anttu.png') repeat;
-        background-size: cover;
+      .roster .roster-item {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction:         column;
       }
-      #teukka {
-        background: linear-gradient(0deg, rgba(34, 34, 51, 0.3), rgba(34, 34, 51, 0.3)), url('img/portrait_anttu.png') repeat;
-        background-size: cover;
+      .roster .roster-item .roster-name {
+        width: 77px;
+        height: 81px;
+        font-family: Lato;
+        font-size: 1em;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 0.9;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff9e7;
       }
+
+      .roster .roster-item .roster-title {
+        font-family: Lato;
+        font-size: 1em;
+        line-height: 2.25;
+        color: #fff9e7;
+      }
+
       .positions {
         display: -webkit-flex;
         display: flex;
@@ -312,7 +353,7 @@
         -webkit-justify-content: space-between;
         justify-content:         space-between;
         flex: 1;
-        height: 720px;
+        height: 100%;
       }
 
       .position p {
@@ -340,27 +381,35 @@
         height: 30%;
       }
       #game-artist {
-        background-height: 100%;
-        background-image:  radial-gradient(circle, rgb(255,255,230) 50%, transparent 50%);
-        background-repeat: no-repeat;
-        background-color: rgb(255,70,61);
+        width: 100%;
+        height: 100%;
+        background: url("img/ships.png") no-repeat;
+      }
+      #game-artist:before {
+        content: " ";
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: radial-gradient(circle, transparent 50%, #ff4541 50%);
       }
       #game-artist h1 {
         color: rgb(255,255,230);
       }
-      #unity-developer  {
+      #shipper-developer  {
         background-height: 100%;
         background: rgb(255,255,230);
       }
-      #unity-developer h1 {
-        color: rgb(36,34,39);
+      #shipper-developer h1 {
+        color: #ff4541;
       }
-      #unity-developer .position-content {
+      #shipper-developer .position-content {
         height: 70%;
         width: 70%;
         box-shadow: 20px 20px 0 0 rgb(255,70,61) inset, -20px -20px 0 0 rgb(255,70,61) inset;
       }
-      #unity-developer .position-content p {
+      #shipper-developer .position-content p {
         width: 52%;
       }
       .title-container {
@@ -382,11 +431,36 @@
         flex-direction:         row;
       }
       #location-pin {
+        fill
         margin-right: 10px;
+      }
+      .footer {
+        background-color: #fff9e7;
+        height: 120px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction:         row;
+        -webkit-align-items: center;
+        align-items:         center;
+        -webkit-justify-content: space-between;
+        justify-content:         space-between;
       }
       .stretch {
         width:100%;
         height:100%;
+      }
+      .footer .footer-item {
+        flex: 1;
+        font-family: Lato;
+        font-size: 1em;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.53;
+        letter-spacing: normal;
+        color: #ff4541;
+        margin-left: 130px;
       }
       a {color:#FFFFFF;}      /* unvisited link */
       a:visited {color:#EEEEEE;}  /* visited link */
@@ -398,83 +472,79 @@
   <div class="flex-container">
     <div class="flex-item picture-content">
       <div id="background">
-        <img src="img/bitmap-copy-2.png" class="stretch"/>
+        <img src="img/shipyard-background.png" class="stretch"/>
       </div>
       <div class="navbar flex-item">
         <div class="navbar-item">
-          <img src="img/group-copy-2.svg"
+          <img src="img/logo_yellow.svg"
             class="logo">
         </div>
         <div class="navbar-links navbar-item">
           <div class="navbar-link"><a href="#section-vision">Vision</a></div>
-          <div class="navbar-link"><a href="#section-vision">Blog</a></div>
           <div class="navbar-link"><a href="#section-team">Team</a></div>
           <div class="navbar-link"><a href="#section-careers">Careers</a></div>
           <div class="navbar-link"><a href="#section-contact">Contact</a></div>
         </div>
         <div class="navbar-item" id="location">
-          <img src="img/fill-1.svg" class="Fill-1" id="location-pin">
+          <img src="img/loc-pin.svg" id="location-pin">
           <span class="loc">Helsinki, Finland</span>
         </div>
       </div>
-      <h2>We’re building the future of location based gaming.</h2>
       <div></div>
     </div>
     <div class="flex-item text-section" id="section-vision">
-      <h1>VISION</h1>
+      <div class="center-top">
+        <div id="sc-tag">
+          <div class="sc-tag">BACKED BY</div>
+          <div class="sc-tag">
+            <img src="img/supercell.png"/>
+          </div>
+        </div>
+      </div>
+      <h1></h1>
       <div class="text-section-content">
-        <h3>We believe location is the next big thing</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius facilisis dolor, sed blandit ipsum pharetra aliquam. Suspendisse bibendum lacus gravida neque suscipit ornare. Sed sed mauris sed nulla aliquet gravida nec nec arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius facilisis dolor, sed blandit ipsum pharetra aliquam. Suspendisse bibendum lacus gravida neque suscipit ornare. Sed sed mauris sed nulla aliquet gravida nec nec arcu.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius facilisis dolor, sed blandit ipsum pharetra aliquam. Suspendisse bibendum lacus gravida neque suscipit ornare. Sed sed mauris sed nulla aliquet gravida nec nec arcu.</p>
+        <h3>WE ARE THE PIONEERS OF LOCATION BASED GAMING</h3>
+        <p>We started to build the future of gaming almost ten years ago, but we were too early, the world was not ready for us. Now we’re back, and on a mission to build world class location based games for mobile.</p>
+        <p>Shipyard Games is a mobile gaming studio, backed by Supercell, the best game makers in the world. Our office is located in Finland, in the beautiful city of Helsinki that is home to some of the top talent in gaming.</p>
         <button class="btn btn-fill">Download press release</button>
       </div>
     <div></div>
     </div>
-    <div class="flex-item" id="section-team">
-      <div class="photos">
-        <div class="photo" id="anttu">
-          <div class="title-container">
-            <h4>Andreas Wedenberg</h4>
-            <h4>CEO</h4>
-          </div>
+    <div id="section-team">
+      <h3>THE SHIPPERS</h3>
+      <div class="roster">
+        <div class="roster-item">
+          <div class="roster-name">TEEMU TUULARI</div>
+          <div class="roster-title">Chief Jesus</div>
         </div>
-        <div class="photo" id="emma">
-          <div class="title-container">
-            <h4>Emma Huovinen</h4>
-            <h4>COO</h4>
-          </div>
+        <div class="roster-item">
+          <div class="roster-name">TEEMU TUULARI</div>
+          <div class="roster-title">Chief Jesus</div>
         </div>
-        <div class="photo" id="teemu">
-          <div class="title-container">
-            <h4>Teemu Tuulari</h4>
-            <h4>Co-founder</h4>
-          </div>
+        <div class="roster-item">
+          <div class="roster-name">TEEMU TUULARI</div>
+          <div class="roster-title">Chief Jesus</div>
         </div>
-        <div class="photo" id="teukka">
-          <div class="title-container">
-            <h4>Teemu Harju</h4>
-            <h4>CTO</h4>
-          </div>
+        <div class="roster-item">
+          <div class="roster-name">TEEMU TUULARI</div>
+          <div class="roster-title">Chief Jesus</div>
+        </div>
+        <div class="roster-item">
+          <div class="roster-name">TEEMU TUULARI</div>
+          <div class="roster-title">Chief Jesus</div>
         </div>
       </div>
     </div>
     <div class="flex-item" id="section-careers">
       <div class="positions">
         <div class="position" id="game-artist">
-          <h1>OPEN POSITION</h1>
-          <div class="position-content">
-            <h5>Game artist</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius facilisis dolor, sed blandit ipsum pharetra aliquam. Suspendisse bibendum lacus gravida neque suscipit ornare. Sed sed mauris sed nulla aliquet gravida nec nec arcu.</p>
-            <button class="btn">Read more</button>
-          </div>
-        <div></div>
         </div>
-        <div class="position" id="unity-developer">
-          <h1>OPEN POSITION</h1>
+        <div class="position" id="shipper-developer">
+          <h1>CAREERS</h1>
           <div class="position-content">
-            <h5>Unity developer</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius facilisis dolor, sed blandit ipsum pharetra aliquam. Suspendisse bibendum lacus gravida neque suscipit ornare. Sed sed mauris sed nulla aliquet gravida nec nec arcu.</p>
-            <button class="btn">Read more</button>
+            <h5>AHOY SHIPPER!</h5>
+            <p>If you believe location is the next big thing, and want to join our team of experienced professionals with a bad sense of humor, we’d love to meet you!</p>
+            <button class="btn">Contact us</button>
           </div>
         <div></div>
         </div>
@@ -482,11 +552,15 @@
     </div>
     <div class="flex-item text-section" id="section-contact">
       <h1>CONTACT US</h1>
-      <div class="text-section-content">
-        <h3>Shipyard Games</h3>
-        <p>Kaapelitehdas xxx</p>
+    </div>
+    <div class="flex-item footer">
+      <div class="footer-item">
+        <img src="img/logo_red.svg"/>
       </div>
-      <div></div>
+      <div class="footer-item">Kaapelitehdas XX<br>Helsinki, Finland.</div>
+      <div class="footer-item">andreas@shipyardgames.com<br>+358 40 123 1234</div>
+      <div class="footer-item">emma@shipyardgames.com<br>+358 40 123 1234</div>
+      <div class="footer-item">Find us on Facebook  </div>
     </div>
   </div>
 </body>
