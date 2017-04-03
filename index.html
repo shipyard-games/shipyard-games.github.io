@@ -6,209 +6,192 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"/>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <style>
-      html,body
-      {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-        overflow-x: hidden;
-        overflow-y: scroll; /* has to be scroll, not auto */
-        -webkit-overflow-scrolling: touch;
-      }
-     body { margin:0; padding:0; }
+    html,body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+      overflow-y: scroll; /* has to be scroll, not auto */
+      -webkit-overflow-scrolling: touch;
+    }
+    .flex-container {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction:         column;
+      -webkit-align-items: center;
+      align-items:         center;
+      overflow-x: hidden;
+      font-size: 15px;
+    }
+    @media only screen and (max-width : 500px) {
       .flex-container {
-        display: -webkit-flex;
-        display: flex;
+        font-size: 8px;
+      }
+    }
+    .flex-item {
+      width: 100%
+    }
+    .text-section {
+      background-color: #FFF8E1;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction:         column;
+      -webkit-align-items: center;
+      align-items:         center;
+      -webkit-justify-content: space-between;
+      justify-content:         space-between;
+    }
+    .text-section .center-top {
+      flex-direction:         row;
+      align-items:         center;
+    }
+    .text-section .center-top .sc-tag {
+      color: #fafafa;
+      background-color: #ff4541;
+      font-family: 'Lato', sans-serif;
+      font-size: 1em;
+      font-weight: 100;
+      font-style: normal;
+      line-height: 1.53;
+      letter-spacing: normal;
+      display: flex;
+      flex-direction:         row;
+      -webkit-align-items: center;
+      align-items:         center;
+    }
+    #sc-tag {
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction:         column;
+      -webkit-justify-content: space-between;
+      justify-content:         space-between;
+    }
+    .text-section-content {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction:         column;
+      -webkit-align-items: center;
+      align-items:         center;
+      -webkit-justify-content: space-between;
+      justify-content:         space-between;
+    }
+    #section-contact {
+      background: url("img/team-outdoors.png") no-repeat;
+      height: 100%;
+    }
+    .text-section-content p {
+      color: #ff4541;
+      width: 33%;
+      object-fit: contain;
+      font-family: 'Lato', sans-serif;
+      font-size: 1em;
+      font-weight: 100;
+      font-style: normal;
+      line-height: 1.53;
+      letter-spacing: normal;
+      text-align: center;
+    }
+    h1 {
+      object-fit: contain;
+      font-family: Lato;
+      font-size: 1em;
+      font-weight: 900;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 4.93;
+      letter-spacing: normal;
+      color: rgb(255,70,61);
+      text-align: center;
+    }
+    h2 {
+      object-fit: contain;
+      font-family: Lato;
+      font-size: 4em;
+      font-weight: 900;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.23;
+      letter-spacing: -1px;
+      text-align: center;
+      color: #ffffff;
+      -webkit-align-items: center;
+      align-items:         center;
+    }
+    h3 {
+      width: 50%;
+      font-family: Lato;
+      font-size: 4em;
+      font-weight: 900;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.17;
+      letter-spacing: -1px;
+      color: rgb(255,70,61);
+      text-align: center;
+      margin: 20px;
+    }
+    h4 {
+      object-fit: contain;
+      font-family: Lato;
+      font-size: 1.6em;
+      font-weight: 900;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    h5 {
+      object-fit: contain;
+      font-family: Lato;
+      font-size: 3.2em;
+      font-weight: 900;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.54;
+      letter-spacing: -1px;
+      text-align: center;
+      color: #182224;
+      margin: 5px
+    }
+    .picture-content {
+      height: 800px;
+    }
+    .navbar {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      flex-direction:         row;
+      -webkit-justify-content: space-between;
+      justify-content:         space-between;
+      -webkit-align-items: center;
+      align-items:         center;
+      margin-top: 23px;
+    }
+    .navbar-item {
+      margin-left: 58px;
+      margin-right: 58px;
+    }
+    @media only screen and (max-width : 500px) {
+      .navbar {
         -webkit-flex-direction: column;
         flex-direction:         column;
-        -webkit-align-items: center;
-        align-items:         center;
-        overflow-x: hidden;
-        font-size: 15px;
       }
-      @media only screen and (max-width : 500px) {
-        .flex-container {
-          font-size: 8px;
-        }
-      }
-      .flex-item {
-        width: 100%
-      }
-      .text-section {
-         background-color: #FFF8E1;
-         display: -webkit-flex;
-         display: flex;
-         -webkit-flex-direction: column;
-         flex-direction:         column;
-         -webkit-align-items: center;
-         align-items:         center;
-         -webkit-justify-content: space-between;
-         justify-content:         space-between;
-       }
-      .text-section .center-top {
-        flex-direction:         row;
-        align-items:         center;
-      }
-      .text-section .center-top .sc-tag {
-        color: #fafafa;
-        background-color: #ff4541;
-        font-family: 'Lato', sans-serif;
-        font-size: 1em;
-        font-weight: 100;
-        font-style: normal;
-        line-height: 1.53;
-        letter-spacing: normal;
-        display: flex;
-        flex-direction:         row;
-        -webkit-align-items: center;
-        align-items:         center;
-      }
-      #sc-tag {
-        display: flex;
-        -webkit-flex-direction: column;
-        flex-direction:         column;
-        -webkit-justify-content: space-between;
-        justify-content:         space-between;
-      }
-      .text-section-content {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        flex-direction:         column;
-        -webkit-align-items: center;
-        align-items:         center;
-        -webkit-justify-content: space-between;
-        justify-content:         space-between;
-      }
-      #section-contact {
-        background: url("img/team-outdoors.png") no-repeat;
-        height: 100%;
-      }
-      .text-section-content p {
-        color: #ff4541;
-        width: 33%;
-        object-fit: contain;
-        font-family: 'Lato', sans-serif;
-        font-size: 1em;
-        font-weight: 100;
-        font-style: normal;
-        line-height: 1.53;
-        letter-spacing: normal;
-        text-align: center;
-      }
-      h1 {
-        object-fit: contain;
-        font-family: Lato;
-        font-size: 1em;
-        font-weight: 900;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 4.93;
-        letter-spacing: normal;
-        color: rgb(255,70,61);
-        text-align: center;
-      }
-      h2 {
-        object-fit: contain;
-        font-family: Lato;
-        font-size: 4em;
-        font-weight: 900;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.23;
-        letter-spacing: -1px;
-        text-align: center;
-        color: #ffffff;
-        -webkit-align-items: center;
-        align-items:         center;
-      }
-      h3 {
-        width: 50%;
-        font-family: Lato;
-        font-size: 4em;
-        font-weight: 900;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.17;
-        letter-spacing: -1px;
-        color: rgb(255,70,61);
-        text-align: center;
+      .navbar-item {
         margin: 20px;
       }
-      h4 {
-        object-fit: contain;
-        font-family: Lato;
-        font-size: 1.6em;
-        font-weight: 900;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.33;
-        letter-spacing: normal;
-        text-align: center;
-        color: #ffffff;
-        margin-top: 5px;
-        margin-bottom: 5px;
-      }
-      h5 {
-        object-fit: contain;
-        font-family: Lato;
-        font-size: 3.2em;
-        font-weight: 900;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.54;
-        letter-spacing: -1px;
-        text-align: center;
-        color: #182224;
-        margin: 5px
-      }
-      .picture-content {
-        height: 868px;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        flex-direction:         column;
-        -webkit-justify-content: space-between;
-        justify-content:         space-between;
-        -webkit-align-items: center;
-        align-items:         center;
-      }
-      .picture-content h2 {
-        width: 50%;
-      }
-      .navbar {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: row;
-        flex-direction:         row;
-        -webkit-justify-content: space-between;
-        justify-content:         space-between;
-        -webkit-align-items: center;
-        align-items:         center;
-        margin-top: 23px;
-      }
-      .navbar-item {
-        margin-left: 58px;
-        margin-right: 58px;
-      }
-      @media only screen and (max-width : 500px) {
-        .navbar {
-          -webkit-flex-direction: column;
-          flex-direction:         column;
-        }
-        .navbar-item {
-          margin: 20px;
-        }
-      }
-      .navbar-item {
-        margin-left: 58px;
-        margin-right: 58px;
-      }
-      .logo {
-        width: 122px;
-        height: 45px;
-      }
+    }
+    .logo {
+      width: 150px;
+      height: 45px;
+    }
       .navbar-links {
         display: -webkit-flex;
         display: flex;
@@ -335,6 +318,7 @@
         display: flex;
         -webkit-flex-direction: row;
         flex-direction:         row;
+        height: 720px;
       }
       @media only screen and (max-width : 600px) {
         .positions {
@@ -381,9 +365,9 @@
         height: 30%;
       }
       #game-artist {
-        width: 100%;
         height: 100%;
         background: url("img/ships.png") no-repeat;
+        background-position: center;
       }
       #game-artist:before {
         content: " ";
@@ -411,9 +395,6 @@
       }
       #shipper-developer .position-content p {
         width: 52%;
-      }
-      .title-container {
-        margin-bottom: 34px;
       }
       #background {
         height: 100%;
@@ -537,8 +518,7 @@
     </div>
     <div class="flex-item" id="section-careers">
       <div class="positions">
-        <div class="position" id="game-artist">
-        </div>
+        <div class="position" id="game-artist"></div>
         <div class="position" id="shipper-developer">
           <h1>CAREERS</h1>
           <div class="position-content">
@@ -554,7 +534,7 @@
       <h1>CONTACT US</h1>
     </div>
     <div class="flex-item footer">
-      <div class="footer-item">
+      <div class="footer-item logo">
         <img src="img/logo_red.svg"/>
       </div>
       <div class="footer-item">Kaapelitehdas XX<br>Helsinki, Finland.</div>
