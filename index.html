@@ -48,26 +48,27 @@
       flex-direction:         row;
       align-items:         center;
     }
-    .text-section .center-top .sc-tag {
-      color: #fafafa;
-      background-color: #ff4541;
-      font-family: 'Lato', sans-serif;
-      font-size: 1em;
-      font-weight: 100;
-      font-style: normal;
-      line-height: 1.53;
-      letter-spacing: normal;
-      display: flex;
-      flex-direction:         row;
-      -webkit-align-items: center;
-      align-items:         center;
-    }
     #sc-tag {
+      background-color: #ff4541;
       display: flex;
       -webkit-flex-direction: column;
       flex-direction:         column;
       -webkit-justify-content: space-between;
       justify-content:         space-between;
+      width: 90px;
+    }
+    #sc-tag .sc-tag-item {
+      color: #fafafa;
+      margin: 13px;
+      max-height: 66px;
+      font-family: 'Lato';
+      font-size: 0.75em;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 3.7;
+      text-align: center;
+      letter-spacing: normal;
     }
     .text-section-content {
       display: -webkit-flex;
@@ -81,7 +82,7 @@
     }
     #section-contact {
       background: url("img/team-outdoors.png") no-repeat;
-      height: 100%;
+      height: 681px;
     }
     .text-section-content p {
       color: #ff4541;
@@ -220,16 +221,7 @@
         .navbar-links { display: none; }
       }
       .loc {
-        object-fit: contain;
-        font-family: Helvetica;
-        font-size: 1em;
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.13;
-        letter-spacing: 0.2px;
-        text-align: left;
-        color: #ffffff;
+
       }
       .btn {
         font-family: Lato;
@@ -411,6 +403,18 @@
         -webkit-flex-direction: row;
         flex-direction:         row;
       }
+      #location span {
+        object-fit: contain;
+        font-family: Lato;
+        font-size: 1em;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.13;
+        letter-spacing: 0.2px;
+        text-align: left;
+        color: #ffffe7;
+      }
       #location-pin {
         fill
         margin-right: 10px;
@@ -476,10 +480,8 @@
     <div class="flex-item text-section" id="section-vision">
       <div class="center-top">
         <div id="sc-tag">
-          <div class="sc-tag">BACKED BY</div>
-          <div class="sc-tag">
-            <img src="img/supercell.png"/>
-          </div>
+          <div class="sc-tag-item">BACKED BY</div>
+          <img class="sc-tag-item" src="img/supercell.png"/>
         </div>
       </div>
       <h1></h1>
@@ -530,7 +532,7 @@
         </div>
       </div>
     </div>
-    <div class="flex-item text-section" id="section-contact">
+    <div class="flex-item" id="section-contact">
       <h1>CONTACT US</h1>
     </div>
     <div class="flex-item footer">
