@@ -124,6 +124,7 @@
     #section-contact {
       background: url("img/team-outdoors.png") no-repeat;
       height: 681px;
+      background-position: center center;
     }
     h1 {
       object-fit: contain;
@@ -200,6 +201,9 @@
       -webkit-align-items: center;
       align-items:         center;
       margin-top: 2vw;
+      z-index:1;
+      top:0;
+      position: relative;
     }
     .navbar-item {
       margin-left: 2vw;
@@ -295,6 +299,7 @@
         -webkit-justify-content: space-between;
         justify-content:         space-between;
         background-image: url("img/team.png");
+        background-position: center center;
         background-size: cover;
         width: 100%;
         height: 100%;
@@ -430,13 +435,8 @@
         font-size: 5em;
       }
       #background {
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        z-index: -1;
-        margin: 0;
+        background-image: url("img/shipyard-background.png");
+        background-position: center center;
       }
       .footer {
         background-color: #fff9e7;
@@ -447,10 +447,6 @@
         flex-direction:         row;
         -webkit-justify-content: space-between;
         justify-content:         space-between;
-      }
-      .stretch {
-        width:100%;
-        height:100%;
       }
       .footer .footer-item {
         display: -webkit-flex;
@@ -482,10 +478,7 @@
 </head>
 <body>
   <div class="flex-container">
-    <div class="flex-item picture-content">
-      <div id="background">
-        <img src="img/shipyard-background.png" class="stretch"/>
-      </div>
+    <div class="flex-item picture-content" id="background">
       <div class="navbar flex-item">
         <div class="navbar-item">
           <img src="img/logo_yellow.svg"
@@ -506,7 +499,6 @@
           </div>
         </div>
       </div>
-      <div></div>
     </div>
     <div class="flex-item text-section" id="section-vision">
       <div class="center-top">
@@ -519,8 +511,8 @@
       <h1></h1>
       <div class="text-section-content">
         <h3>WE ARE THE PIONEERS OF LOCATION BASED GAMING</h3>
-        <p>We started to build the future of gaming almost ten years ago, but we were too early, the world was not ready for us. Now we’re back, and on a mission to build world class location based games for mobile.</p>
-        <p>Shipyard Games is a mobile gaming studio, backed by Supercell, the best game makers in the world. Our office is located in Finland, in the beautiful city of Helsinki that is home to some of the top talent in gaming.</p>
+        <p>We started to build the future of gaming almost ten years ago but we were too early, the world was not ready for us. Now we’re back and on a mission to build world class location based games for mobile.</p>
+        <p>Shipyard Games is a mobile gaming studio. We're backed by Supercell, the best game makers in the world. Our office is located in Finland, in the beautiful city of Helsinki that is home to some of the top talent in gaming.</p>
         <button class="btn btn-fill">Download press release</button>
       </div>
     <div></div>
