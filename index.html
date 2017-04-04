@@ -1,9 +1,13 @@
+<html lang="en-US">
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Shipyard Games"/>
   <meta name="viewport" content="width=device-width">
   <title>Shipyard Games</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"/>
+  <link rel="icon"
+      type="image/png"
+      href="img/hook.png">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
   <style>
@@ -125,8 +129,10 @@
       background-image: url("img/2.png");
       background-position: center center;
       background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
       width: 100%;
-      height: 100%;
+      height: 800px;
     }
     h1 {
       object-fit: contain;
@@ -223,6 +229,8 @@
     .logo {
       width: 140px;
       height: 80px;
+    }
+    .logo .top {
       margin-left: 2vw;
     }
     .navbar-links {
@@ -267,7 +275,7 @@
       height: 20px;
     }
     #location img {
-     height: 1.5vw;
+     height: 20px;
     }
       .btn {
         font-family: Lato;
@@ -303,8 +311,10 @@
         background-image: url("img/team.png");
         background-position: center center;
         background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         width: 100%;
-        height: 100%;
+        height: 800px;
       }
       #section-team h3 {
         width: 50%;
@@ -440,8 +450,10 @@
         background-image: url("img/shipyard-background.png");
         background-position: center center;
         background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         width: 100%;
-        height: 100%;
+        height: 800px;
       }
       .footer {
         background-color: #fff9e7;
@@ -457,23 +469,32 @@
         display: -webkit-flex;
         display: flex;
         flex: 1;
-        font-size: 1em;
+        font-size: 1.0em;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
         font-family: Lato;
-        line-height: 1.53;
         letter-spacing: normal;
         color: #ff4541;
         margin-top: 2.5vw;
         -webkit-flex-direction: column;
         flex-direction:         column;
-        align-items: center;
-        -webkit-align-items: center;
       }
       .footer .footer-item a {
         color: inherit;
         text-decoration: none !important;
+      }
+      #fb-footer-item {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction:         row;
+        font-weight: bold;
+      }
+      #fb-logo {
+        margin-right: 20px;
+        width: 20px;
+        height: 20px;
       }
       a {color:#FFFFFF;}      /* unvisited link */
       a:visited {color:#EEEEEE;}  /* visited link */
@@ -487,7 +508,7 @@
       <div class="navbar flex-item">
         <div class="navbar-item">
           <img src="img/logo_yellow.svg"
-            class="logo">
+            class="logo top">
         </div>
         <div class="navbar-links navbar-item">
           <div class="navbar-link"><a href="#section-vision">Vision</a></div>
@@ -567,6 +588,10 @@
       <div class="footer-item logo">
         <img src="img/logo_red.svg"/>
       </div>
+      <div class="footer-item" id="fb-footer-item">
+        <img src="img/fb-logo.svg" id="fb-logo" href="https://www.facebook.com/ShipyardGames/"></img>
+        <a href="https://www.facebook.com/ShipyardGames/">Like us on Facebook</a>
+      </div>
       <div class="footer-item">Tallberginkatu 1 C lokero 151<br>00180 Helsinki, Finland</div>
       <div class="footer-item">
         <a href="mailto:andreas@shipyard.games?Subject=Shipyard%20Games">andreas@shipyard.games</a>
@@ -574,9 +599,6 @@
       <div class="footer-item">
         <a href="mailto:emma@shipyard.games?Subject=Shipyard%20Games">emma@shipyard.games</a>
         +358 40 846 8169</div>
-      <div class="footer-item" style="font-weight: bold;">
-        <a href="https://www.facebook.com/ShipyardGames/">Find us on Facebook</a>
-      </div>
     </div>
   </div>
 </body>
