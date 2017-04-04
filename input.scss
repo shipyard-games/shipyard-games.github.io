@@ -4,8 +4,20 @@ $primary-color:    #FF4541;
 $background-color: #fff9e7;
 $text-color:       #fafafa;
 
-$width-name: max-width;
-$target-width: 320px;
+$break-small: 320px;
+$break-large: 1024px;
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
 
 @mixin display-flex() {
   display: -webkit-flex;
@@ -83,6 +95,14 @@ h3 {
   text-align: center;
   margin-top: 2vw;
   margin-bottom: 2vw;
+  @include respond-to(handhelds) {
+    width: 80%;
+    font-size: 2.5em;
+  }
+  @include respond-to(medium-screens) {
+    width: 80%;
+    font-size: 2.5em;
+  }
 }
 
 h4 {
@@ -126,6 +146,12 @@ a.btn {
   @include align-items(center);
   overflow-x: hidden;
   font-size: 15px;
+  @include respond-to(handhelds) {
+    font-size: 14px;
+  }
+  @include respond-to(medium-screens) {
+    font-size: 14px;
+  }
 }
 
 .flex-item {
@@ -133,7 +159,7 @@ a.btn {
 }
 
 .text-section {
-  height: 800px;
+  height: 100%;
   background-color: $background-color;
   @include display-flex();
   @include flex-direction(column);
@@ -151,6 +177,12 @@ a.btn {
   p {
     color: $primary-color;
     width: 45%;
+    @include respond-to(handhelds) {
+      width: 80%;
+    }
+    @include respond-to(medium-screens) {
+      width: 80%;
+    }
     font-family: $secondary-font;
     object-fit: contain;
     font-size: 1em;
@@ -200,7 +232,7 @@ a.btn {
   background-position: center center;
   @include background-size(cover);
   width: 100%;
-  height: 800px;
+  height: 90%;
 
   h1 {
     color: $background-color;
@@ -208,7 +240,7 @@ a.btn {
 }
 
 .picture-content {
-  height: 800px;
+  height: 100%
 }
 
 .navbar {
@@ -220,11 +252,28 @@ a.btn {
   z-index:1;
   top:0;
   position: relative;
+
+  @include respond-to(handhelds) {
+    @include flex-direction(column);
+    @include justify-content(flex-start);
+    top: 90%;
+  }
+  @include respond-to(medium-screens) {
+    @include flex-direction(column);
+    @include justify-content(flex-start);
+    top: 90%;
+    bottom:0;
+  }
 }
 
 .navbar-item {
   margin-left: 2vw;
   margin-right: 4vw;
+
+  .top {
+    @include respond-to(handhelds) { display: none; }
+    @include respond-to(medium-screens) { display: none; }
+  }
 }
 
 .logo {
@@ -237,6 +286,9 @@ a.btn {
   @include flex-direction(row);
   @include align-items(center);
   @include justify-content(space-between);
+
+  @include respond-to(handhelds) { display: none; }
+  @include respond-to(medium-screens) { display: none; }
 
   .navbar-link {
     object-fit: contain;
@@ -272,6 +324,11 @@ a.btn {
   img {
    height: 20px;
   }
+
+  @include respond-to(handhelds) {
+  }
+  @include respond-to(medium-screens) {
+  }
 }
 
 .btn {
@@ -303,7 +360,7 @@ a.btn {
   background-position: center center;
   @include background-size(cover);
   width: 100%;
-  height: 800px;
+  height: 100%;
 
   h3 {
     width: 50%;
@@ -427,7 +484,7 @@ a.btn {
   background-position: center center;
   @include background-size(cover);
   width: 100%;
-  height: 800px;
+  height: 100%;
 }
 
 .footer {
