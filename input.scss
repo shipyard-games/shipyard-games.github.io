@@ -5,7 +5,7 @@ $background-color: #fff9e7;
 $text-color:       #fafafa;
 
 $break-small: 320px;
-$break-large: 1024px;
+$break-large: 720px;
 
 @mixin respond-to($media) {
   @if $media == handhelds {

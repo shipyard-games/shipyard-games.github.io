@@ -49,7 +49,7 @@ h3 {
     h3 {
       width: 80%;
       font-size: 2.5em; } }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+  @media only screen and (min-width: 321px) and (max-width: 719px) {
     h3 {
       width: 80%;
       font-size: 2.5em; } }
@@ -107,7 +107,7 @@ a.btn {
   @media only screen and (max-width: 320px) {
     .flex-container {
       font-size: 14px; } }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+  @media only screen and (min-width: 321px) and (max-width: 719px) {
     .flex-container {
       font-size: 14px; } }
 
@@ -151,7 +151,7 @@ a.btn {
     @media only screen and (max-width: 320px) {
       .text-section-content p {
         width: 80%; } }
-    @media only screen and (min-width: 321px) and (max-width: 1023px) {
+    @media only screen and (min-width: 321px) and (max-width: 719px) {
       .text-section-content p {
         width: 80%; } }
 
@@ -217,7 +217,7 @@ a.btn {
       -webkit-justify-content: flex-start;
       justify-content: flex-start;
       top: 90%; } }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+  @media only screen and (min-width: 321px) and (max-width: 719px) {
     .navbar {
       -webkit-flex-direction: column;
       flex-direction: column;
@@ -232,7 +232,7 @@ a.btn {
   @media only screen and (max-width: 320px) {
     .navbar-item .top {
       display: none; } }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+  @media only screen and (min-width: 321px) and (max-width: 719px) {
     .navbar-item .top {
       display: none; } }
 
@@ -252,7 +252,7 @@ a.btn {
   @media only screen and (max-width: 320px) {
     .navbar-links {
       display: none; } }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+  @media only screen and (min-width: 321px) and (max-width: 719px) {
     .navbar-links {
       display: none; } }
   .navbar-links .navbar-link {
@@ -316,7 +316,7 @@ a.btn {
   width: 100%;
   padding-bottom: 10vh;
   background-color: #fff9e7; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 720px) {
     #section-team {
       height: 100vh;
       padding-bottom: 0vh;
@@ -337,7 +337,7 @@ a.btn {
     @media only screen and (max-width: 320px) {
       #section-team h3 {
         color: #FF4541; } }
-    @media only screen and (min-width: 321px) and (max-width: 1023px) {
+    @media only screen and (min-width: 321px) and (max-width: 719px) {
       #section-team h3 {
         color: #FF4541; } }
 
@@ -354,7 +354,7 @@ a.btn {
     .roster {
       -webkit-flex-direction: column;
       flex-direction: column; } }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+  @media only screen and (min-width: 321px) and (max-width: 719px) {
     .roster {
       -webkit-flex-direction: column;
       flex-direction: column; } }
@@ -369,7 +369,7 @@ a.btn {
       order: 3; }
     .roster #emma {
       order: 2; } }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+  @media only screen and (min-width: 321px) and (max-width: 719px) {
     .roster #teemu {
       order: 4; }
     .roster #alex {
@@ -392,7 +392,7 @@ a.btn {
     @media only screen and (max-width: 320px) {
       .roster .roster-item {
         margin-top: 7vh; } }
-    @media only screen and (min-width: 321px) and (max-width: 1023px) {
+    @media only screen and (min-width: 321px) and (max-width: 719px) {
       .roster .roster-item {
         margin-top: 7vh; } }
     .roster .roster-item .roster-img {
@@ -401,7 +401,7 @@ a.btn {
       @media only screen and (max-width: 320px) {
         .roster .roster-item .roster-img {
           display: block; } }
-      @media only screen and (min-width: 321px) and (max-width: 1023px) {
+      @media only screen and (min-width: 321px) and (max-width: 719px) {
         .roster .roster-item .roster-img {
           display: block; } }
     .roster .roster-item .roster-name {
@@ -412,7 +412,7 @@ a.btn {
         .roster .roster-item .roster-name {
           color: #FF4541;
           margin-top: 2vh; } }
-      @media only screen and (min-width: 321px) and (max-width: 1023px) {
+      @media only screen and (min-width: 321px) and (max-width: 719px) {
         .roster .roster-item .roster-name {
           color: #FF4541;
           margin-top: 2vh; } }
@@ -424,7 +424,7 @@ a.btn {
       @media only screen and (max-width: 320px) {
         .roster .roster-item .roster-title {
           color: #FF4541; } }
-      @media only screen and (min-width: 321px) and (max-width: 1023px) {
+      @media only screen and (min-width: 321px) and (max-width: 719px) {
         .roster .roster-item .roster-title {
           color: #FF4541; } }
 
@@ -434,7 +434,7 @@ a.btn {
   @media only screen and (max-width: 320px) {
     #section-careers {
       height: 50vh; } }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+  @media only screen and (min-width: 321px) and (max-width: 719px) {
     #section-careers {
       height: 50vh; } }
 
@@ -449,7 +449,7 @@ a.btn {
       flex-direction: row;
       -webkit-justify-content: center;
       justify-content: center; } }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+  @media only screen and (min-width: 321px) and (max-width: 719px) {
     .positions {
       -webkit-flex-direction: row;
       flex-direction: row;
@@ -506,7 +506,7 @@ a.btn {
   @media only screen and (max-width: 320px) {
     #game-artist {
       display: none; } }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+  @media only screen and (min-width: 321px) and (max-width: 719px) {
     #game-artist {
       display: none; } }
   #game-artist h5 {
@@ -519,10 +519,10 @@ a.btn {
     @media only screen and (max-width: 320px) {
       #shipper-developer h1 {
         display: none; } }
-    @media only screen and (min-width: 321px) and (max-width: 1023px) {
+    @media only screen and (min-width: 321px) and (max-width: 719px) {
       #shipper-developer h1 {
         display: none; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 720px) {
     #shipper-developer .position-content {
       height: 70%;
       width: 70%;
@@ -530,13 +530,13 @@ a.btn {
   @media only screen and (max-width: 320px) {
     #shipper-developer .position-content {
       width: 80%; } }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+  @media only screen and (min-width: 321px) and (max-width: 719px) {
     #shipper-developer .position-content {
       width: 80%; } }
   #shipper-developer .position-content p {
     font-family: Lato;
     font-size: 1em; }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 720px) {
       #shipper-developer .position-content p {
         width: 52%; } }
   #shipper-developer .position-content h5 {
@@ -545,14 +545,14 @@ a.btn {
       #shipper-developer .position-content h5 {
         font-size: 2.5em;
         padding-top: 10vh; } }
-    @media only screen and (min-width: 321px) and (max-width: 1023px) {
+    @media only screen and (min-width: 321px) and (max-width: 719px) {
       #shipper-developer .position-content h5 {
         font-size: 2.5em;
         padding-top: 10vh; } }
   @media only screen and (max-width: 320px) {
     #shipper-developer .position-content .btn {
       display: none; } }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+  @media only screen and (min-width: 321px) and (max-width: 719px) {
     #shipper-developer .position-content .btn {
       display: none; } }
 
@@ -580,7 +580,7 @@ a.btn {
       align-items: center;
       height: 80%;
       padding-top: 10vh; } }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+  @media only screen and (min-width: 321px) and (max-width: 719px) {
     .footer {
       -webkit-flex-direction: column;
       flex-direction: column;
@@ -588,7 +588,7 @@ a.btn {
       align-items: center;
       height: 80%;
       padding-top: 10vh; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 720px) {
     .footer {
       padding-left: 5%; } }
   .footer .footer-item {
@@ -608,7 +608,7 @@ a.btn {
     @media only screen and (max-width: 320px) {
       .footer .footer-item {
         margin-top: 1vh; } }
-    @media only screen and (min-width: 321px) and (max-width: 1023px) {
+    @media only screen and (min-width: 321px) and (max-width: 719px) {
       .footer .footer-item {
         margin-top: 1vh; } }
     .footer .footer-item a {
@@ -628,7 +628,7 @@ a.btn {
   @media only screen and (max-width: 320px) {
     #fb-footer-item {
       margin-top: 10vh; } }
-  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+  @media only screen and (min-width: 321px) and (max-width: 719px) {
     #fb-footer-item {
       margin-top: 10vh; } }
 
