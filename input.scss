@@ -160,6 +160,7 @@ a.btn {
 
 .text-section {
   height: 100%;
+  min-height: 720px;
   background-color: $background-color;
   @include display-flex();
   @include flex-direction(column);
@@ -386,6 +387,23 @@ a.btn {
   margin-right: 10vw;
   margin-bottom: 3vw;
 
+  @include respond-to(handhelds) {
+    #teemu { order: 4; }
+    #alex { order: 5; }
+    #anttu { order: 1; }
+    #teukka { order: 3; }
+    #emma { order: 2; }
+  }
+
+  @include respond-to(medium-screens) {
+    #teemu { order: 4; }
+    #alex { order: 5; }
+    #anttu { order: 1; }
+    #teukka { order: 3; }
+    #emma { order: 2; }
+  }
+
+
   .roster-item {
     @include display-flex();
     @include flex-direction(column);
@@ -430,10 +448,9 @@ a.btn {
   width: 100%;
 
   @include respond-to(handhelds) {
-    height: 50%;
+
   }
   @include respond-to(medium-screens) {
-    height: 50%;
   }
 }
 
@@ -441,6 +458,13 @@ a.btn {
   @include display-flex();
   @include flex-direction(row);
   height: 720px;
+  min-height: 500px;
+  @include respond-to(handhelds) {
+    height: 100%;
+  }
+  @include respond-to(medium-screens) {
+    height: 100%;
+  }
 }
 
 .position {
@@ -527,12 +551,12 @@ a.btn {
     h5 {
       font-size: 5em;
       @include respond-to(handhelds) {
-        margin-top: 20vh;
         font-size: 2.5em;
+        padding-top: 10vh;
       }
       @include respond-to(medium-screens) {
-        margin-top: 20vh;
         font-size: 2.5em;
+        padding-top: 10vh;
       }
     }
     .btn {
@@ -598,7 +622,7 @@ a.btn {
     }
 
     img {
-      width: 100%;      
+      width: 100%;
     }
   }
 }
