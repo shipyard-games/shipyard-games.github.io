@@ -353,10 +353,12 @@ a.btn {
   @include align-items(center);
   @include justify-content(space-between);
   width: 100%;
-
+  padding-bottom: 10vh;
   background-color: $background-color;
+
   @include respond-to(wide-screens) {
     height: 100%;
+    padding-bottom: 0vh;
     background-image: url("img/team.png");
     background-position: center center;
     @include background-size(cover);
@@ -446,24 +448,26 @@ a.btn {
 
 #section-careers {
   width: 100%;
+  height: 720px;
 
   @include respond-to(handhelds) {
-
+    height: 50%;
   }
   @include respond-to(medium-screens) {
+    height: 50%;
   }
 }
 
 .positions {
   @include display-flex();
   @include flex-direction(row);
-  height: 720px;
-  min-height: 500px;
   @include respond-to(handhelds) {
-    height: 100%;
+    @include flex-direction(row);
+    @include justify-content(center);
   }
   @include respond-to(medium-screens) {
-    height: 100%;
+    @include flex-direction(row);
+    @include justify-content(center);
   }
 }
 

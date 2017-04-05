@@ -315,10 +315,12 @@ a.btn {
   -webkit-justify-content: space-between;
   justify-content: space-between;
   width: 100%;
+  padding-bottom: 10vh;
   background-color: #fff9e7; }
   @media only screen and (min-width: 1024px) {
     #section-team {
       height: 100%;
+      padding-bottom: 0vh;
       background-image: url("img/team.png");
       background-position: center center;
       background-size: cover;
@@ -430,21 +432,32 @@ a.btn {
           color: #FF4541; } }
 
 #section-careers {
-  width: 100%; }
+  width: 100%;
+  height: 720px; }
+  @media only screen and (max-width: 320px) {
+    #section-careers {
+      height: 50%; } }
+  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+    #section-careers {
+      height: 50%; } }
 
 .positions {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
-  flex-direction: row;
-  height: 720px;
-  min-height: 500px; }
+  flex-direction: row; }
   @media only screen and (max-width: 320px) {
     .positions {
-      height: 100%; } }
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: center;
+      justify-content: center; } }
   @media only screen and (min-width: 321px) and (max-width: 1023px) {
     .positions {
-      height: 100%; } }
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: center;
+      justify-content: center; } }
 
 .position {
   display: -webkit-flex;
