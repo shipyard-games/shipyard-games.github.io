@@ -590,7 +590,7 @@ a.btn {
         display: none; } }
 
 #background {
-  background-image: url("img/shipyard-background.jpg");
+  background-image: url("http://d37flwhmqpls8z.cloudfront.net/img/shipyard-background.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
