@@ -635,6 +635,12 @@ a.btn {
   @include display-flex();
   @include flex-direction(row);
   font-weight: bold;
+  @include respond-to(handhelds) {
+    margin-top: 10vh;
+  }
+  @include respond-to(medium-screens) {
+    margin-top: 10vh;
+  }
 }
 
 #fb-logo {

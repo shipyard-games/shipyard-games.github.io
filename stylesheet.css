@@ -625,6 +625,12 @@ a.btn {
   -webkit-flex-direction: row;
   flex-direction: row;
   font-weight: bold; }
+  @media only screen and (max-width: 320px) {
+    #fb-footer-item {
+      margin-top: 10vh; } }
+  @media only screen and (min-width: 321px) and (max-width: 1023px) {
+    #fb-footer-item {
+      margin-top: 10vh; } }
 
 #fb-logo {
   margin-right: 20px;
