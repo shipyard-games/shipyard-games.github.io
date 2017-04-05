@@ -186,7 +186,7 @@ a.btn {
     background-color: #fff9e7; }
 
 #section-contact {
-  background-image: url("img/ships-large.jpg");
+  background-image: url("http://d37flwhmqpls8z.cloudfront.net/img/ships-large.jpg");
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -320,7 +320,7 @@ a.btn {
     #section-team {
       height: 100vh;
       padding-bottom: 0vh;
-      background-image: url("img/team.jpg");
+      background-image: url("http://d37flwhmqpls8z.cloudfront.net/img/team.jpg");
       background-position: center center;
       background-size: cover; } }
   #section-team h3 {
@@ -557,7 +557,7 @@ a.btn {
       display: none; } }
 
 #background {
-  background-image: url("img/shipyard-background.jpg");
+  background-image: url("http://d37flwhmqpls8z.cloudfront.net/img/shipyard-background.jpg");
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -615,7 +615,7 @@ a.btn {
       color: inherit;
       text-decoration: none !important; }
   .footer .logo {
-    background: url("img/logo_red.svg");
+    background: url("http://d37flwhmqpls8z.cloudfront.net/img/logo_red.svg");
     background-repeat: no-repeat;
     background-size: auto; }
 
