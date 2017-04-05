@@ -206,10 +206,7 @@ a.btn {
   .sc-tag-item {
     background-color: $primary-color;
     color: $text-color;
-    font-size: 1.2em;
-    line-height: 1;
     text-align: center;
-    letter-spacing: normal;
   }
 
   #sc-logo {
@@ -224,6 +221,9 @@ a.btn {
   }
 
   #sc-backed {
+    line-height: 1;
+    letter-spacing: normal;
+    font-size: 1.4em;
     padding-top: 10px;
     padding-bottom: 10px;
   }

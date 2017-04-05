@@ -168,10 +168,7 @@ a.btn {
   #sc-tag .sc-tag-item {
     background-color: #FF4541;
     color: #fafafa;
-    font-size: 1.2em;
-    line-height: 1;
-    text-align: center;
-    letter-spacing: normal; }
+    text-align: center; }
   #sc-tag #sc-logo {
     width: 90px;
     height: 90px; }
@@ -181,6 +178,9 @@ a.btn {
       width: 63px;
       height: 52px; }
   #sc-tag #sc-backed {
+    line-height: 1;
+    letter-spacing: normal;
+    font-size: 1.4em;
     padding-top: 10px;
     padding-bottom: 10px; }
   #sc-tag .arrow-down {
