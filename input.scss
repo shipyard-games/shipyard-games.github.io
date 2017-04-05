@@ -41,8 +41,6 @@ $break-large: 1024px;
 
 @mixin background-size($sz) {
   background-size: $sz;
-  -moz-background-size: $sz;
-  -o-background-size: $sz;
 }
 
 .BigNoodleTitling {
@@ -146,6 +144,7 @@ a.btn {
   @include align-items(center);
   overflow-x: hidden;
   font-size: 15px;
+  height: auto;
   @include respond-to(handhelds) {
     font-size: 14px;
   }
@@ -159,7 +158,7 @@ a.btn {
 }
 
 .text-section {
-  height: 100%;
+  height: 100vh;
   min-height: 720px;
   background-color: $background-color;
   @include display-flex();
@@ -233,7 +232,7 @@ a.btn {
   background-position: center center;
   @include background-size(cover);
   width: 100%;
-  height: 90%;
+  height: 90vh;
 
   h1 {
     color: $background-color;
@@ -241,7 +240,7 @@ a.btn {
 }
 
 .picture-content {
-  height: 100%
+  height: 100vh;
 }
 
 .navbar {
@@ -357,7 +356,7 @@ a.btn {
   background-color: $background-color;
 
   @include respond-to(wide-screens) {
-    height: 100%;
+    height: 100vh;
     padding-bottom: 0vh;
     background-image: url("img/team.jpg");
     background-position: center center;
@@ -451,10 +450,10 @@ a.btn {
   height: 720px;
 
   @include respond-to(handhelds) {
-    height: 50%;
+    height: 50vh;
   }
   @include respond-to(medium-screens) {
-    height: 50%;
+    height: 50vh;
   }
 }
 
@@ -579,7 +578,7 @@ a.btn {
   background-position: center center;
   @include background-size(cover);
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .footer {

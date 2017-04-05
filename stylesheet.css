@@ -102,7 +102,8 @@ a.btn {
   -webkit-align-items: center;
   align-items: center;
   overflow-x: hidden;
-  font-size: 15px; }
+  font-size: 15px;
+  height: auto; }
   @media only screen and (max-width: 320px) {
     .flex-container {
       font-size: 14px; } }
@@ -114,7 +115,7 @@ a.btn {
   width: 100%; }
 
 .text-section {
-  height: 100%;
+  height: 100vh;
   min-height: 720px;
   background-color: #fff9e7;
   display: -webkit-flex;
@@ -188,15 +189,13 @@ a.btn {
   background-image: url("img/ships-large.jpg");
   background-position: center center;
   background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   width: 100%;
-  height: 90%; }
+  height: 90vh; }
   #section-contact h1 {
     color: #fff9e7; }
 
 .picture-content {
-  height: 100%; }
+  height: 100vh; }
 
 .navbar {
   display: -webkit-flex;
@@ -319,13 +318,11 @@ a.btn {
   background-color: #fff9e7; }
   @media only screen and (min-width: 1024px) {
     #section-team {
-      height: 100%;
+      height: 100vh;
       padding-bottom: 0vh;
       background-image: url("img/team.jpg");
       background-position: center center;
-      background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover; } }
+      background-size: cover; } }
   #section-team h3 {
     width: 50%;
     font-size: 4em;
@@ -436,10 +433,10 @@ a.btn {
   height: 720px; }
   @media only screen and (max-width: 320px) {
     #section-careers {
-      height: 50%; } }
+      height: 50vh; } }
   @media only screen and (min-width: 321px) and (max-width: 1023px) {
     #section-careers {
-      height: 50%; } }
+      height: 50vh; } }
 
 .positions {
   display: -webkit-flex;
@@ -563,10 +560,8 @@ a.btn {
   background-image: url("img/shipyard-background.jpg");
   background-position: center center;
   background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   width: 100%;
-  height: 100%; }
+  height: 100vh; }
 
 .footer {
   background-color: #fff9e7;
@@ -622,9 +617,7 @@ a.btn {
   .footer .logo {
     background: url("img/logo_red.svg");
     background-repeat: no-repeat;
-    background-size: auto;
-    -moz-background-size: auto;
-    -o-background-size: auto; }
+    background-size: auto; }
 
 #fb-footer-item {
   display: -webkit-flex;
