@@ -593,6 +593,9 @@ a.btn {
       align-items: center;
       height: 80%;
       padding-top: 10vh; } }
+  @media only screen and (min-width: 1024px) {
+    .footer {
+      padding-left: 5%; } }
   .footer .footer-item {
     flex: 1;
     font-size: 1.0em;
@@ -616,8 +619,12 @@ a.btn {
     .footer .footer-item a {
       color: inherit;
       text-decoration: none !important; }
-    .footer .footer-item img {
-      width: 100%; }
+  .footer .logo {
+    background: url("img/logo_red.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto; }
 
 #fb-footer-item {
   display: -webkit-flex;

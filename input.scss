@@ -600,6 +600,9 @@ a.btn {
     height: 80%;
     padding-top: 10vh;
   }
+  @include respond-to(wide-screens) {
+    padding-left: 5%;
+  }
 
   .footer-item {
     flex: 1;
@@ -624,10 +627,12 @@ a.btn {
       color: inherit;
       text-decoration: none !important;
     }
+  }
 
-    img {
-      width: 100%;
-    }
+  .logo {
+    background: url("img/logo_red.svg");
+    background-repeat: no-repeat;
+    @include background-size(auto);
   }
 }
 
