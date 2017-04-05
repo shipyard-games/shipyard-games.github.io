@@ -58,6 +58,7 @@ html,body {
   overflow-y: scroll; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
   font-family: $primary-font;
+  background-color: $background-color;
 }
 
 h1 {
@@ -91,8 +92,8 @@ h3 {
   text-align: center;
   color: $primary-color;
   text-align: center;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
+  margin-bottom: 2vh;
+  margin-top: 0vh;
   @include respond-to(handhelds) {
     width: 80%;
     font-size: 2.5em;
@@ -195,9 +196,12 @@ a.btn {
 }
 
 #sc-tag {
+  flex: 0;
   @include display-flex();
   @include flex-direction(column);
   width: 90px;
+  position: relative;
+  top: 0;
 
   .sc-tag-item {
     background-color: $primary-color;
@@ -227,7 +231,7 @@ a.btn {
   }
 }
 
-#section-contact {
+#section-footer-start {
   background-image: url("http://d37flwhmqpls8z.cloudfront.net/img/ships-large.jpg");
   background-position: center center;
   @include background-size(cover);
@@ -257,6 +261,7 @@ a.btn {
     @include flex-direction(column);
     @include justify-content(flex-start);
     top: 90%;
+    bottom:0;
   }
   @include respond-to(medium-screens) {
     @include flex-direction(column);
@@ -269,12 +274,13 @@ a.btn {
 .navbar-item {
   margin-left: 2vw;
   margin-right: 4vw;
-
-  .top {
-    @include respond-to(handhelds) { display: none; }
-    @include respond-to(medium-screens) { display: none; }
-  }
 }
+
+.top {
+  @include respond-to(handhelds) { display: none; }
+  @include respond-to(medium-screens) { display: none; }
+}
+
 
 .logo {
   width: 140px;
@@ -447,26 +453,26 @@ a.btn {
 
 #section-careers {
   width: 100%;
-  height: 720px;
-
-  @include respond-to(handhelds) {
-    height: 50vh;
-  }
-  @include respond-to(medium-screens) {
-    height: 50vh;
-  }
 }
 
 .positions {
   @include display-flex();
   @include flex-direction(row);
   @include respond-to(handhelds) {
-    @include flex-direction(row);
+    @include flex-direction(column);
     @include justify-content(center);
   }
   @include respond-to(medium-screens) {
-    @include flex-direction(row);
+    @include flex-direction(column);
     @include justify-content(center);
+  }
+  height: 720px;
+
+  @include respond-to(handhelds) {
+    height: 720px;
+  }
+  @include respond-to(medium-screens) {
+    height: 720px;
   }
 }
 
@@ -475,6 +481,7 @@ a.btn {
   @include flex-direction(column);
   @include align-items(center);
   @include justify-content(space-between);
+
   flex: 1;
   height: 100%;
 
@@ -504,39 +511,67 @@ a.btn {
   width: 100%;
   height: 100%;
   background-color: $background-color;
-  background: radial-gradient(circle, $background-color 50%, $primary-color 50%);
   @include display-flex();
   @include flex-direction(column);
   @include align-items(center);
   @include justify-content(center);
 
-  @include respond-to(handhelds) { display: none; }
-  @include respond-to(medium-screens) { display: none; }
+  @include respond-to(wide-screens) {
+    background: radial-gradient(circle, $background-color 50%, $primary-color 50%);
+  }
+  @include respond-to(handhelds) {
+    background: radial-gradient(circle, $primary-color 50%, $background-color 50%);
+    color: $background-color;
+  }
+  @include respond-to(medium-screens) {
+    background: radial-gradient(circle, $primary-color 50%, $background-color 50%);
+    color: $background-color;
+  }
 
   h5 {
     font-size: 5em;
+    @include respond-to(handhelds) {
+      font-size: 2.5em;
+      color: $background-color;
+    }
+    @include respond-to(medium-screens) {
+      font-size: 2.5em;
+      color: $background-color;
+    }
+  }
+
+  .contact {
+    @include display-flex();
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+    font-family: $secondary-font;
+    a {
+      color: inherit;
+      text-decoration: none !important;
+    }
   }
 }
 
 #shipper-developer  {
   background: $background-color;
+  padding-top: 2vh;
 
-  h1 {
-    color: $primary-color;
-    @include respond-to(handhelds) {
+  @include respond-to(handhelds) {
+    h1 {
       display: none;
     }
-    @include respond-to(medium-screens) {
+  }
+  @include respond-to(medium-screens) {
+    h1 {
       display: none;
     }
   }
 
   .position-content {
-    @include respond-to(wide-screens) {
-      height: 70%;
-      width: 70%;
-      box-shadow: 20px 20px 0 0 $primary-color inset, -20px -20px 0 0 $primary-color inset;
-    }
+    height: 70%;
+    width: 70%;
+    box-shadow: 2vw 2vw 0 0 $primary-color inset, -2vw -2vw 0 0 $primary-color inset;
     @include respond-to(handhelds) {
       width: 80%;
     }
@@ -550,16 +585,20 @@ a.btn {
       @include respond-to(wide-screens) {
         width: 52%;
       }
+      @include respond-to(handhelds) {
+        padding: 10%;
+      }
+      @include respond-to(medium-screens) {
+        padding: 10%;
+      }
     }
     h5 {
       font-size: 5em;
       @include respond-to(handhelds) {
         font-size: 2.5em;
-        padding-top: 10vh;
       }
       @include respond-to(medium-screens) {
         font-size: 2.5em;
-        padding-top: 10vh;
       }
     }
     .btn {
@@ -574,11 +613,12 @@ a.btn {
 }
 
 #background {
-  background-image: url("http://d37flwhmqpls8z.cloudfront.net/img/shipyard-background.jpg");
-  background-position: center center;
+  background-image: url("img/shipyard-background.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
   @include background-size(cover);
   width: 100%;
-  height: 100vh;
+  height: 80.7vh;
 }
 
 .footer {
@@ -586,42 +626,43 @@ a.btn {
   height: 120px;
   @include display-flex();
   @include flex-direction(row);
-  @include justify-content(space-between);
+
   @include respond-to(handhelds) {
+    @include justify-content(space-between);
     @include flex-direction(column);
     @include align-items(center);
     height: 80%;
     padding-top: 10vh;
   }
+
   @include respond-to(medium-screens) {
+    @include justify-content(space-between);
     @include flex-direction(column);
     @include align-items(center);
     height: 80%;
     padding-top: 10vh;
   }
+
   @include respond-to(wide-screens) {
-    padding-left: 5%;
+    @include justify-content(space-between);
+    padding-left: 20vw;
   }
 
   .footer-item {
     flex: 1;
     font-size: 1.0em;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     font-family: $secondary-font;
-    letter-spacing: normal;
     color: $primary-color;
-    margin-top: 2.5vw;
+    margin-top: 2.5vh;
     @include display-flex();
     @include flex-direction(column);
+
     @include respond-to(handhelds) {
       margin-top: 1vh;
     }
     @include respond-to(medium-screens) {
       margin-top: 1vh;
     }
-
     a {
       color: inherit;
       text-decoration: none !important;
@@ -629,9 +670,15 @@ a.btn {
   }
 
   .logo {
+    @include respond-to(handhelds) {
+
+    }
+    @include respond-to(medium-screens) {
+
+    }
     background: url("http://d37flwhmqpls8z.cloudfront.net/img/logo_red.svg");
     background-repeat: no-repeat;
-    @include background-size(auto);
+    background-size: auto;
   }
 }
 
