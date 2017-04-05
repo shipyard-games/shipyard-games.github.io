@@ -229,7 +229,7 @@ a.btn {
 }
 
 #section-contact {
-  background-image: url("img/ships-large.png");
+  background-image: url("img/ships-large.jpg");
   background-position: center center;
   @include background-size(cover);
   width: 100%;
@@ -359,7 +359,7 @@ a.btn {
   @include respond-to(wide-screens) {
     height: 100%;
     padding-bottom: 0vh;
-    background-image: url("img/team.png");
+    background-image: url("img/team.jpg");
     background-position: center center;
     @include background-size(cover);
   }
@@ -575,7 +575,7 @@ a.btn {
 }
 
 #background {
-  background-image: url("img/shipyard-background.png");
+  background-image: url("img/shipyard-background.jpg");
   background-position: center center;
   @include background-size(cover);
   width: 100%;
