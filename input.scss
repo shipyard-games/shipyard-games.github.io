@@ -555,6 +555,7 @@ a.btn {
     @include align-items(center);
     @include justify-content(center);
     font-family: $secondary-font;
+    line-height: 2;
     a {
       color: inherit;
       text-decoration: none !important;
