@@ -565,23 +565,22 @@ a.btn {
 
 #shipper-developer  {
   background: $background-color;
-  padding-top: 2vh;
 
-  @include respond-to(handhelds) {
-    h1 {
+  h1 {
+    margin: 0;
+    @include respond-to(handhelds) {
       display: none;
     }
-  }
-  @include respond-to(medium-screens) {
-    h1 {
+    @include respond-to(medium-screens) {
       display: none;
     }
   }
 
   .position-content {
-    height: 70%;
-    width: 70%;
+    height: 100%;
+    width: 90%;
     box-shadow: 2vw 2vw 0 0 $primary-color inset, -2vw -2vw 0 0 $primary-color inset;
+    margin-bottom: 5%;
     @include respond-to(handhelds) {
       width: 80%;
     }
@@ -609,14 +608,6 @@ a.btn {
       }
       @include respond-to(medium-screens) {
         font-size: 2.5em;
-      }
-    }
-    .btn {
-      @include respond-to(handhelds) {
-        display: none;
-      }
-      @include respond-to(medium-screens) {
-        display: none;
       }
     }
   }
