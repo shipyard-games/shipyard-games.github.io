@@ -512,9 +512,9 @@ a.btn {
   @include flex-direction(column);
   @include align-items(center);
   @include justify-content(center);
-  margin-bottom: 10%;
-  width: 52%;
   height: 30%;
+  width: 84%;
+  margin-bottom: 8%;
 }
 
 #game-artist {
@@ -569,6 +569,7 @@ a.btn {
   background: $background-color;
 
   h1 {
+    line-height: 1.9;
     margin: 0;
     @include respond-to(handhelds) {
       display: none;
@@ -580,9 +581,11 @@ a.btn {
 
   .position-content {
     height: 100%;
-    width: 90%;
+    width: 80%;
     box-shadow: 2vw 2vw 0 0 $primary-color inset, -2vw -2vw 0 0 $primary-color inset;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
+    margin-top: 2%;
+
     @include respond-to(handhelds) {
       width: 80%;
     }
