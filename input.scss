@@ -433,7 +433,7 @@ a.btn {
   background-color: $primary-color;
 }
 
-#section-team {
+#team {
   @include display-flex();
   @include flex-direction(column);
   @include align-items(center);
@@ -532,7 +532,7 @@ a.btn {
   }
 }
 
-#section-careers {
+#careers {
   width: 100%;
 }
 
@@ -588,7 +588,7 @@ a.btn {
   margin-bottom: 8%;
 }
 
-#game-artist {
+#contact {
   width: 100%;
   height: 100%;
   background-color: $background-color;
@@ -647,7 +647,7 @@ a.btn {
   margin-bottom: 5vh;
 }
 
-#shipper-developer  {
+#careers  {
   background: $background-color;
 
   h1 {
@@ -785,7 +785,7 @@ a.btn {
   height: 20px;
 }
 
-#section-news {
+#news {
   height: auto;
   min-height: 100vh;
 
