@@ -216,7 +216,6 @@ a.btn {
   margin-top: 20vh;
   margin-bottom: 5vh;
 
-
   p {
     color: $primary-color;
     width: 80%;
@@ -250,6 +249,15 @@ a.btn {
   }
   a {
     color: $primary-color
+  }
+  h2 {
+    margin-top: 10%;
+    color: $primary-color
+  }
+  h3 {
+    text-align: left;
+    font-size: 1.5em;
+    width: 80%
   }
 }
 
@@ -639,9 +647,12 @@ a.btn {
 .contact-careers {
   @include display-flex();
   @include flex-direction(row);
-  @include align-items(center);
+  @include align-items(flex-start);
+
   .contact-item {
+    font-size: 1.2em;
     margin-right: 3vw;
+    color: $secondary-background-color;
   }
   margin-top: 5vh;
   margin-bottom: 5vh;

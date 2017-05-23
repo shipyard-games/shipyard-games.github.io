@@ -210,6 +210,13 @@ a.btn {
     font-family: Lato; }
   .text-section-content-careers a {
     color: #FF4541; }
+  .text-section-content-careers h2 {
+    margin-top: 10%;
+    color: #FF4541; }
+  .text-section-content-careers h3 {
+    text-align: left;
+    font-size: 1.5em;
+    width: 80%; }
 
 .container-careers {
   background-color: #fff9e7; }
@@ -649,12 +656,14 @@ a.btn {
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
   margin-top: 5vh;
   margin-bottom: 5vh; }
   .contact-careers .contact-item {
-    margin-right: 3vw; }
+    font-size: 1.2em;
+    margin-right: 3vw;
+    color: #34394C; }
 
 #careers {
   background: #fff9e7; }
