@@ -45,7 +45,7 @@ h3 {
   color: #FF4541;
   text-align: center;
   margin-bottom: 2vh;
-  margin-top: 0vh; }
+  margin-top: 20vh; }
   @media only screen and (max-width: 320px) {
     h3 {
       width: 80%;

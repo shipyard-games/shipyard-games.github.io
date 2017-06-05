@@ -94,7 +94,7 @@ h3 {
   color: $primary-color;
   text-align: center;
   margin-bottom: 2vh;
-  margin-top: 0vh;
+  margin-top: 20vh;
   @include respond-to(handhelds) {
     width: 80%;
     font-size: 2.5em;
