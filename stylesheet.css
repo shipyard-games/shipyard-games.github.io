@@ -179,10 +179,16 @@ a.btn {
   justify-content: space-between;
   background-color: #fff9e7;
   margin-top: 20vh;
-  margin-bottom: 5vh; }
+  margin-bottom: 5vh;
+  width: 45%; }
+  @media only screen and (max-width: 320px) {
+    .text-section-content-careers {
+      width: 80%; } }
+  @media only screen and (min-width: 321px) and (max-width: 719px) {
+    .text-section-content-careers {
+      width: 80%; } }
   .text-section-content-careers p {
     color: #FF4541;
-    width: 80%;
     font-family: Lato;
     object-fit: contain;
     font-size: 1em;
@@ -190,8 +196,7 @@ a.btn {
     font-style: normal;
     line-height: 1.53;
     letter-spacing: normal;
-    text-align: left;
-    margin-top: 5vh; }
+    text-align: center; }
     @media only screen and (max-width: 320px) {
       .text-section-content-careers p {
         width: 80%; } }
@@ -215,9 +220,9 @@ a.btn {
     margin-top: 10%;
     color: #FF4541; }
   .text-section-content-careers h3 {
-    text-align: left;
+    text-align: center;
     font-size: 1.5em;
-    width: 80%; }
+    margin-top: 5vh; }
 
 .container-careers {
   background-color: #fff9e7; }
@@ -657,14 +662,28 @@ a.btn {
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  margin-top: 5vh;
-  margin-bottom: 5vh; }
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 80%;
+  margin-top: 7vh;
+  margin-bottom: 7vh; }
+  @media only screen and (max-width: 320px) {
+    .contact-careers {
+      -webkit-flex-direction: column;
+      flex-direction: column; } }
+  @media only screen and (min-width: 321px) and (max-width: 719px) {
+    .contact-careers {
+      -webkit-flex-direction: column;
+      flex-direction: column; } }
   .contact-careers .contact-item {
     font-size: 1.2em;
-    margin-right: 3vw;
+    margin: 3vw;
     color: #34394C; }
+    .contact-careers .contact-item a {
+      color: inherit;
+      text-decoration: none !important; }
 
 #careers {
   background: #fff9e7; }

@@ -216,9 +216,16 @@ a.btn {
   margin-top: 20vh;
   margin-bottom: 5vh;
 
+  width: 45%;
+  @include respond-to(handhelds) {
+    width: 80%;
+  }
+  @include respond-to(medium-screens) {
+    width: 80%;
+  }
+
   p {
     color: $primary-color;
-    width: 80%;
     @include respond-to(handhelds) {
       width: 80%;
     }
@@ -232,8 +239,7 @@ a.btn {
     font-style: normal;
     line-height: 1.53;
     letter-spacing: normal;
-    text-align: left;
-    margin-top: 5vh;
+    text-align: center;
   }
   ul {
     width: 80%;
@@ -256,9 +262,9 @@ a.btn {
     color: $primary-color
   }
   h3 {
-    text-align: left;
+    text-align: center;
     font-size: 1.5em;
-    width: 80%
+    margin-top: 5vh;
   }
 }
 
@@ -648,15 +654,23 @@ a.btn {
 .contact-careers {
   @include display-flex();
   @include flex-direction(row);
-  @include align-items(flex-start);
+  @include respond-to(handhelds) { @include flex-direction(column); }
+  @include respond-to(medium-screens) { @include flex-direction(column); }
+  @include align-items(center);
+  @include justify-content(center);
+  width: 80%;
 
   .contact-item {
     font-size: 1.2em;
-    margin-right: 3vw;
+    margin: 3vw;
     color: $secondary-background-color;
+    a {
+      color: inherit;
+      text-decoration: none !important;
+    }
   }
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
 }
 
 #careers  {
