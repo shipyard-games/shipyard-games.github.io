@@ -187,6 +187,8 @@ a.btn {
   @media only screen and (min-width: 321px) and (max-width: 719px) {
     .text-section-content-careers {
       width: 80%; } }
+  .text-section-content-careers .left-align {
+    text-align: left; }
   .text-section-content-careers p {
     color: #FF4541;
     font-family: Lato;
@@ -196,15 +198,10 @@ a.btn {
     font-style: normal;
     line-height: 1.53;
     letter-spacing: normal;
-    text-align: center; }
-    @media only screen and (max-width: 320px) {
-      .text-section-content-careers p {
-        width: 80%; } }
-    @media only screen and (min-width: 321px) and (max-width: 719px) {
-      .text-section-content-careers p {
-        width: 80%; } }
+    text-align: justify;
+    width: 100%; }
   .text-section-content-careers ul {
-    width: 80%; }
+    width: 100%; }
   .text-section-content-careers li {
     font-weight: 100;
     font-style: normal;

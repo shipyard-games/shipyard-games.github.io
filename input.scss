@@ -224,14 +224,12 @@ a.btn {
     width: 80%;
   }
 
+  .left-align {
+    text-align: left;
+  }
+
   p {
     color: $primary-color;
-    @include respond-to(handhelds) {
-      width: 80%;
-    }
-    @include respond-to(medium-screens) {
-      width: 80%;
-    }
     font-family: $secondary-font;
     object-fit: contain;
     font-size: 1em;
@@ -239,10 +237,11 @@ a.btn {
     font-style: normal;
     line-height: 1.53;
     letter-spacing: normal;
-    text-align: center;
+    text-align: justify;
+    width: 100%;
   }
   ul {
-    width: 80%;
+    width: 100%;
   }
   li {
     font-weight: 100;
